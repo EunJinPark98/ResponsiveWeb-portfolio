@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* common.css 공통영역 (헤더, 푸터) */
+
+/* 모바일 320px */
 body{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
@@ -36,3 +38,14 @@ a{
     width: 100%;
     /* min-width:  */
 }
+
+/* 테블릿 시작 */
+@media screen and(min-width:768px){
+    
+}/* 테블릿 끝 */
+
+/* pc 시작 */
+@media screen and(min-width:1440px){
+    
+}/* pc 끝 */
+
