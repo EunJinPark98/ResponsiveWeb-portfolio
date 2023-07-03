@@ -44,7 +44,7 @@ a{
 .header_in{
     position: relative;
     height: 60px;
-    background-color: pink;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +106,6 @@ a{
     color: #888;
     padding: 15px 20px;
 }
-
 .gnb .m1{
     display: flex;
     justify-content: space-between;
