@@ -170,6 +170,21 @@ a{
     .recruit{
         display: block;
     }
+    .recruit a{
+        font-size: 16px;
+        color: #191919;
+        display: flex;
+    }
+    .recruit a::after{
+        content: "";
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin-left: 7px;
+        margin-top: 2px;
+        background-image: url(../img/main/ico_recruit.png);
+        background-position: center;
+    }
     
 }/* pc 끝 */
 
