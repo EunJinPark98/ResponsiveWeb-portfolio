@@ -41,9 +41,6 @@ a{
     margin-right: auto;
 }
 /* 헤더 */
-#header{
-
-}
 .header_in{
     height: 60px;
     background-color: pink;
@@ -91,6 +88,28 @@ a{
 
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
+    /* 헤더 */
+    #header .logo{
+        width: 145px;
+        height: 20px;
+    }
+    .menuBtn{
+        width: 34px;
+        height: 36px;
+    }
+    .menuBtn span{
+        width: 34px;
+        height: 1px;
+    }
+    .menuBtn .bar1{
+        top: 8px;
+    }
+    .menuBtn .bar2{
+        top: 16px;
+    }
+    .menuBtn .bar3{
+        top: 24px;
+    }
     
 }/* 테블릿 끝 */
 
