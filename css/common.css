@@ -36,12 +36,13 @@ a{
 #wrap{
     position: relative;
     width: 100%;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
 }
 /* 헤더 */
+#header{
+    z-index: 1000;
+}
 .header_in{
+    position: relative;
     height: 60px;
     background-color: pink;
     display: flex;
@@ -68,6 +69,7 @@ a{
     display: block;
     width: 17px;
     height: 2px;
+    margin-left: 13px;
     background-color: #000;
 }
 .menuBtn .bar1{
@@ -79,11 +81,75 @@ a{
 .menuBtn .bar3{
     top: 20px;
 }
-.pc_gnb{
+.pc_gnb, .pc_recruit{
     display: none;
 }
-.recruit{
-    display: none;
+/* 헤더 - gnb 영역 */
+.menu{
+    /* display: none; */
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 25px;
+    background-color: #fff;
+    overflow-y: scroll;
+    z-index: 700;
+}
+.gnb .d1{
+    
+}
+.gnb > ul > li > a{
+    font-size: 17px;
+    font-weight: 500;
+    color: #888;
+    padding: 15px 20px;
+}
+
+.gnb .m1{
+    display: flex;
+    justify-content: space-between;
+}
+.gnb .m1::after{
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/main/arr_bottom.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.gnb .sub1{
+    /* display: none; */
+    padding: 20px 20px;
+    background-color: #f7f7f7;
+}
+.gnb .sub1 a{
+    font-size: 14px;
+    line-height: 40px;
+    color: #888;
+}
+.gnb .sub2{
+    /* display: none; */
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+}
+.gnb .sub2 a{
+    font-size: 14px;
+    line-height: 40px;
+    color: #888;
+}
+.gnb .sub6{
+    /* display: none; */
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+}
+.gnb .sub6 a{
+    font-size: 14px;
+    line-height: 40px;
+    color: #888;
 }
 
 /* 테블릿 시작 */
@@ -92,6 +158,9 @@ a{
     #header .logo{
         width: 145px;
         height: 20px;
+    }
+    .header_in{
+        height: 73px;
     }
     .menuBtn{
         width: 34px;
@@ -110,12 +179,23 @@ a{
     .menuBtn .bar3{
         top: 24px;
     }
-    
+    .menu{
+        top: 73px;
+    }
 }/* 테블릿 끝 */
 
 /* pc 시작 */
 @media screen and (min-width:1920px){
     /* 헤더 */
+    #wrap{
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header_in{
+        margin-left: 0;
+        margin-right: 0;
+    }
     .menuBtn{
         display: none;
     }
@@ -186,15 +266,15 @@ a{
         line-height: 33px;
         color: #666;
     }
-    .recruit{
+    .pc_recruit{
         display: block;
     }
-    .recruit a{
+    .pc_recruit a{
         font-size: 16px;
         color: #191919;
         display: flex;
     }
-    .recruit a::after{
+    .pc_recruit a::after{
         content: "";
         display: block;
         width: 22px;
