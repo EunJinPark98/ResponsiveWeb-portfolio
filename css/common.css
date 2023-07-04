@@ -113,12 +113,23 @@ a{
 .gnb .m1::after{
     content: "";
     display: block;
-    width: 24px;
-    height: 24px;
-    background-image: url(../img/main/arr_bottom.png);
-    background-repeat: no-repeat;
-    background-size: 13px auto;
-    background-position: center;
+    width: 9px;
+    height: 9px;
+    border-left: 3px solid #999;
+    border-bottom: 3px solid #999;   
+    transform: rotate(-45deg);
+}
+.gnb .m1.on::after{
+    content: "";
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;   
+    transform: rotate(135deg);
+}
+.gnb .sub{
+    display: none;
 }
 .gnb .sub .d2{
     line-height: 56px;
