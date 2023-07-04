@@ -41,6 +41,7 @@ a{
 /* 헤더 */
 #header{
     z-index: 1000;
+    background-color: pink;
 }
 .header_in{
     position: relative;
@@ -159,23 +160,6 @@ a{
     .header_in{
         height: 73px;
     }
-    .menuBtn{
-        width: 34px;
-        height: 36px;
-    }
-    .menuBtn span{
-        width: 34px;
-        height: 1px;
-    }
-    .menuBtn .bar1{
-        top: 8px;
-    }
-    .menuBtn .bar2{
-        top: 16px;
-    }
-    .menuBtn .bar3{
-        top: 24px;
-    }
     .menu{
         top: 73px;
     }
@@ -184,18 +168,15 @@ a{
 /* pc 시작 */
 @media screen and (min-width:1920px){
     /* 헤더 */
-    #wrap{
+    #header{
+        position: relative;
+        background-color: transparent;
+    }
+    .header_in{
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
-    }
-    #header{
-        position: relative;
-    }
-    .header_in{
-        margin-left: 0;
-        margin-right: 0;
-        background-color: aquamarine;
+        background-color: transparent;
     }
     .menuBtn{
         display: none;
