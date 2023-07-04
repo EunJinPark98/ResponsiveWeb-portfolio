@@ -189,9 +189,13 @@ a{
         margin-left: auto;
         margin-right: auto;
     }
+    #header{
+        position: relative;
+    }
     .header_in{
         margin-left: 0;
         margin-right: 0;
+        background-color: aquamarine;
     }
     .menuBtn{
         display: none;
@@ -199,69 +203,51 @@ a{
     .pc_gnb{
         position: relative;
         display: block;
+        height: 100%;
     }
     .pc_gnb > ul{
         display: flex;
     }
     .pc_gnb .d1{
-        margin-left: 30px;
-        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        height: 74px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
-    .pc_gnb .m1{
+    .pc_gnb .d1 a{
         font-size: 16px;
         font-weight: 600;
         color: #000;
     }
-    .pc_gnb .sub1{
-        display: none;
-    }
-    .pc_gnb .sub1 div{
-        position: absolute;
-        top: 40px;
-        left: -30px;
-        padding: 15px 0;
-        border-top: 1px solid #ccc;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        display: flex;
-        background-color: #fff;
-    }
-    .pc_gnb .sub1 .left{
-        padding: 0px 24px;
-        margin-right: 20px;
-    }
-    .pc_gnb .sub1 .right{
-        border-left: 1px solid #ccc;
-        padding: 0 24px;
-        margin-right: 20px;
-    }
-    .pc_gnb .sub2{
+    /* 서브메뉴 */
+    .pc_gnb_bg{
         display: none;
         position: absolute;
-        top: 40px;
-        left: 90px;
-        padding: 15px 24px;
-        border-top: 1px solid #ccc;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        background-color: #fff;
-    }
-    .pc_gnb .sub6{
-        display: none;
-        position: absolute;
-        top: 40px;
+        top: 73px;
+        left: 0;
         right: 0;
-        padding: 15px 24px;
-        border-top: 1px solid #ccc;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        background-color: #fff;
+        height: 200px;
+        background-color: #888;
+        z-index: 500;
     }
-    .pc_gnb .m2{
-        padding: 10px 0px 9px;
+    .pc_gnb .sub{
+        display: none;
+        position: absolute;
+        top: 73px;
+        left: 0;
+        padding: 45px 25px;
+        line-height: 35px;
+        z-index: 600;
+    }
+    .pc_gnb .sub ul{
+        float: left;
+        margin-right: 50px;
+    }
+    .pc_gnb .sub .m2{
         font-size: 14px;
-        line-height: 33px;
-        color: #666;
+        font-weight: 500;
+        color: #222;
     }
     .pc_recruit{
         display: block;
