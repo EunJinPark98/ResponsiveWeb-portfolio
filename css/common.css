@@ -87,11 +87,11 @@ a{
 .menuBtn .bar3{
     top: 20px;
 }
-/* 헤더 - gnb 영역 */
+/* 메뉴 열면 */
 .menu_open{
     /* display: none; */
     position: fixed;
-    top: 60px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -99,6 +99,45 @@ a{
     z-index: 700;
     background-color: #191C20;
 }
+.menu_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+}
+.logo_wh{
+    width: 124px;
+    height: 18px;
+    background-image: url(../img/main/logo_wh.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-indent: -99999px;
+}
+.menu_close{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.menu_close span{
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 2px;
+    margin-left: 13px;
+    background-color: #fff;
+}
+.menu_close .bar1{
+    top: 14px;
+    transform: rotate(-45deg);
+}
+.menu_close .bar2{
+    top: 14px;
+    transform: rotate(45deg);
+}
+
+/* 헤더 - gnb 영역 */
 .gnb .d1 > a{
     display: flex;
     justify-content: space-between;
