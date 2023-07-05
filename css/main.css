@@ -2,6 +2,7 @@
 /* main.css 메인 */
 /* main 1 슬라이드 */
 .main1{
+    position: relative;
     margin-top: -60px;
 }
 .m1_slide{
@@ -14,6 +15,58 @@
 .m1_slide .bann_pc{
     display: none;
 }
+.m1_txt{
+    position: absolute;
+    /* 버튼하고 나서 위치 지정합시다@@ */
+}
+
+/* 슬라이드 버튼 */
+.m1_btn{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+}
+.m1_prev, .m1_next, .m1_pause{
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.m1_prev{
+    margin-right: 18px;
+    background-image: url(../img/main/ico_prev.png);
+}
+.m1_next{
+    background-image: url(../img/main/ico_next.png);
+}
+.m1_play{
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    margin-left: 18px;
+}
+.m1_pause{
+    margin-left: 18px;
+    background-image: url(../img/main/ico_pause.png);
+}
+.ms_pager{
+    color: #fff;
+    margin-top: 5px;
+}
+.ms_pager li{
+    display: none;
+}
+.ms_pager .slick-active{
+    display: block;
+}
+
 
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {

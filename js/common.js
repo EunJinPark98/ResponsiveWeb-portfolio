@@ -34,6 +34,7 @@ $('.menuBtn').click(function(){
     $('.menu_top').fadeIn(function(){
         $('.menu_bottom').slideDown();
     });
+    // !!!!브라우저 스크롤바 없애야함!!!!
     $(window).css({
         position : 'fixed',
         scroll : 'default'
