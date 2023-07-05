@@ -86,14 +86,13 @@ a{
 .menuBtn .bar3{
     top: 20px;
 }
-/* 모바일 메뉴 버튼 */
+/* 모바일 헤더 - 메뉴 버튼 */
 .menu_top{
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
     z-index: 700;
     background-color: #191C20;
 }
@@ -141,7 +140,7 @@ a{
     z-index: 700;
     background-color: #191C20;
 }
-/* 헤더 - gnb 영역 */
+/* 모바일 헤더 - gnb 영역 */
 .gnb .d1 > a{
     display: flex;
     justify-content: space-between;
@@ -205,24 +204,17 @@ a{
     background-position: center;
     background-size: 18px auto;
 }
-
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
     /* 헤더 */
-    #header .logo, .menu_logo{
+    #header .logo, .menu_top_in .logo{
         width: 145px;
         height: 20px;
     }
     .header_in{
         height: 73px;
     }
-    .menu{
-        top: 73px;
-    }
-    .menu_logo{
-
-    }
-    .menu_top{
+    .menu_top_in{
         height: 73px;
     }
 
