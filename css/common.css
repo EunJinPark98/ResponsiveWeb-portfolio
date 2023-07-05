@@ -37,8 +37,7 @@ a{
     position: relative;
     width: 100%;
 }
-/* 모바일 */
-/* 헤더 */
+/* 모바일 헤더*/
 #header{
     z-index: 1000;
     background-color: transparent;
@@ -54,7 +53,7 @@ a{
     margin-right: 20px;
     background-color: transparent;
 }
-#header .logo{
+.header_in .logo{
     width: 124px;
     height: 18px;
     background-image: url(../img/main/logo_bk.png);
@@ -87,33 +86,28 @@ a{
 .menuBtn .bar3{
     top: 20px;
 }
-/* 메뉴 열면 */
-.menu_open{
-    /* display: none; */
+/* 모바일 메뉴 버튼 */
+.menu_top{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    overflow-y: scroll;
+    height: 60px;
     z-index: 700;
     background-color: #191C20;
 }
-.menu_top{
+.menu_top_in{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
     margin-left: 20px;
     margin-right: 20px;
-    height: 60px;
 }
-.logo_wh{
-    width: 124px;
-    height: 18px;
+.menu_top_in .logo{
     background-image: url(../img/main/logo_wh.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    text-indent: -99999px;
 }
 .menu_close{
     position: relative;
@@ -136,7 +130,17 @@ a{
     top: 14px;
     transform: rotate(45deg);
 }
-
+.menu_bottom{
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    z-index: 700;
+    background-color: #191C20;
+}
 /* 헤더 - gnb 영역 */
 .gnb .d1 > a{
     display: flex;
@@ -205,7 +209,7 @@ a{
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
     /* 헤더 */
-    #header .logo{
+    #header .logo, .menu_logo{
         width: 145px;
         height: 20px;
     }
@@ -215,6 +219,13 @@ a{
     .menu{
         top: 73px;
     }
+    .menu_logo{
+
+    }
+    .menu_top{
+        height: 73px;
+    }
+
 }/* 테블릿 끝 */
 
 /* pc 시작 */
