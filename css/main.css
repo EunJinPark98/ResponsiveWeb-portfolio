@@ -1,2 +1,39 @@
 @charset "utf-8";
 /* main.css 메인 */
+/* main 1 슬라이드 */
+.main1{
+    margin-top: -60px;
+}
+.m1_slide{
+    height: 439px;
+}
+.m1_slide .bann_mo{
+    width: 100%;
+    height: auto;
+}
+.m1_slide .bann_pc{
+    display: none;
+}
+
+/* 테블릿 시작 */
+@media screen and (min-width:768px) {
+    /* main 1 */
+    .main1{
+        margin-top: -73px;
+    }
+}/* 테블릿 끝 */
+
+/* pc 시작 */
+@media screen and (min-width:1920px) {
+    /* main 1 */
+    .m1_slide .bann_mo{
+        display: none;
+    }
+    .m1_slide .bann_pc{
+        display: block;
+    }
+    .m1_slide .bann_pc{
+        width: 100%;
+        height: auto;
+    }
+}/* pc 끝 */

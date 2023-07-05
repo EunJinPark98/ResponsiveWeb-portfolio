@@ -39,24 +39,28 @@ a{
 }
 /* 모바일 헤더*/
 #header{
-    z-index: 1000;
+    z-index: 1001;
     background-color: transparent;
+}
+#header:hover .logo{
+    background-image: url(../img/main/logo_bk.png);
 }
 .header_in{
     position: relative;
     height: 60px;
-    background-color: #fff;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: transparent;
+    z-index: 1000;
 }
 .header_in .logo{
     width: 124px;
     height: 18px;
-    background-image: url(../img/main/logo_bk.png);
+    background-image: url(../img/main/logo_wh.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     text-indent: -99999px;
@@ -252,7 +256,7 @@ a{
     .pc_gnb .d1 a{
         font-size: 16px;
         font-weight: 600;
-        color: #000;
+        color: #fff;
     }
     /* 서브메뉴 */
     .pc_gnb_bg{
@@ -288,7 +292,7 @@ a{
     }
     .pc_recruit a{
         font-size: 16px;
-        color: #191919;
+        color: #fff;
         display: flex;
     }
     .pc_recruit a::after{
@@ -300,6 +304,10 @@ a{
         margin-top: 2px;
         background-image: url(../img/main/ico_recruit.png);
         background-position: center;
+    }
+    .pc_recruit:hover a::after{
+        
+        background-image: url(../img/main/ico_recruit.on.png);
     }
     
 }/* pc 끝 */
