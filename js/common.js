@@ -34,12 +34,21 @@ $('.menuBtn').click(function(){
     $('.menu_top').fadeIn(function(){
         $('.menu_bottom').slideDown();
     });
+    $(window).css({
+        position : 'fixed',
+        scroll : 'default'
+    });
     return false;
 });
 // 모바일 메뉴 닫기
 $('.menu_close').click(function(){
     $('.menu_bottom').slideUp(function(){
         $('.menu_top').fadeOut();
+    });
+    $('.menu_bottom .sub').stop().slideUp();
+    $('.menu_bottom .m1').removeClass('on');
+    $(window).css({
+        position : 'relative'
     });
     return false;
 });

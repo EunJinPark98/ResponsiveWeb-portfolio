@@ -112,8 +112,13 @@ a{
     margin-left: 20px;
     margin-right: 20px;
 }
-.menu_top_in .logo{
+.menu_logo{
+    width: 124px;
+    height: 18px;
     background-image: url(../img/main/logo_wh.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-indent: -99999px;
 }
 .menu_close{
     position: relative;
@@ -214,7 +219,7 @@ a{
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
     /* 헤더 */
-    #header .logo, .menu_top_in .logo{
+    #header .logo, .menu_logo{
         width: 145px;
         height: 20px;
     }
