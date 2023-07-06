@@ -13,14 +13,23 @@ $('.m1_slide').slick({
   atoplaySpeed : 500,
   speed : 1000,
 });
-// main 1 슬라이드 텍스트
-$('.m1_text .on').fadeIn(1000);
+// main 1 슬라이드 텍스트 등장
+$('.m1_text .on').show().animate({
+  marginTop : '0',
+  opacity : '1'
+},1000);
 
 $('.m1_slide').on('afterChange', function(event, slick, currentSlide) {
-  console.log(currentSlide);
-  $('.m1_txt_box').removeClass('on').hide();
-  $('.m1_txt_box').eq(currentSlide).addClass('on').fadeIn(1000);
+  $('.m1_txt_box').removeClass('on').hide().css({
+    marginTop : '50px',
+    opacity : '0'
+  });
+  $('.m1_txt_box').eq(currentSlide).addClass('on').show().animate({
+    marginTop : '0',
+    opacity : '1'
+  },1000);
 });
+
 
 // main 1 슬라이드 재생버튼
 $('.m1_play').click(function(){
