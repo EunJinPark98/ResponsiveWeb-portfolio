@@ -4,9 +4,7 @@
 .main1{
     position: relative;
     margin-top: -60px;
-}
-.m1_slide{
-    height: 439px;
+
 }
 .m1_slide .bann_mo{
     width: 100%;
@@ -16,7 +14,6 @@
     display: none;
 }
 /* 슬라이드 텍스트 */
-/* @@@@위치 다시 봐야함@@@@@@ */
 .m1_text{
     position: absolute;
     left: 0;
@@ -35,21 +32,23 @@
     font-weight: 700;
     letter-spacing: 1px;
 }
+.m1_txt_box h1.pc{
+    display: none;
+}
 .m1_txt_box div a{
     display: inline-block;
-    padding: 10px 30px;
-    margin-top: 18px;
+    padding: 11px 26px;
+    margin-top: 17px;
     border: 2px solid #fff;
-    border-radius: 20px;
+    border-radius: 100px;
     font-size: 12px;
     font-weight: 500;
     color: #fff;
 }
 /* 슬라이드 버튼 */
-/* @@@@위치 다시 봐야함@@@@@@ */
 .m1_btn{
     position: absolute;
-    bottom: 10px;
+    bottom: 5%;
     left: 0;
     right: 0;
     display: flex;
@@ -102,6 +101,15 @@
     .main1{
         margin-top: -73px;
     }
+    .m1_txt_box h1{
+        font-size: 42px;
+    }
+    .m1_txt_box div a{
+        margin-top: 32px;
+        padding: 14px 36px;
+        font-size: 15px;
+    }
+
 }/* 테블릿 끝 */
 
 /* pc 시작 */
@@ -116,5 +124,20 @@
     .m1_slide .bann_pc{
         width: 100%;
         height: auto;
+    }
+    .m1_text{
+        padding: 0 420px;
+    }
+    .m1_txt_box h1{
+        display: none;
+    }
+    .m1_txt_box h1.pc{
+        font-size: 60px;
+        display: block;
+    }
+    .m1_txt_box div a{
+        margin-top: 53px;
+        padding: 16px 40px;
+        font-size: 16px;
     }
 }/* pc 끝 */
