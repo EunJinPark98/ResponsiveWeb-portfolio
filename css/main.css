@@ -1,10 +1,12 @@
 @charset "utf-8";
 /* main.css 메인 */
 /* main 1 슬라이드 */
+#container{
+    background-color: lightyellow;
+}
 .main1{
     position: relative;
     margin-top: -60px;
-
 }
 .m1_slide .bann_mo{
     width: 100%;

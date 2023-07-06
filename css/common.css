@@ -42,13 +42,26 @@ a{
     z-index: 1001;
     background-color: transparent;
 }
-#header:hover .menuBtn span{
+#header.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff !important;
+     /* js로 색상변경때문에.. important사용..*/
+}
+#header.fixed .header_in{
+    background-color: #fff !important;
+}
+#header:hover .menuBtn span, #header.fixed .menuBtn span{
     background-color: #000;
+}
+#header:hover .logo, #header.fixed .logo{
+    background-image: url(../img/main/logo_bk.png);
 }
 .header_in{
     position: relative;
     height: 60px;
-    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,9 +77,6 @@ a{
     background-repeat: no-repeat;
     background-size: 100% auto;
     text-indent: -99999px;
-}
-#header:hover .logo{
-    background-image: url(../img/main/logo_bk.png);
 }
 .pc_gnb, .pc_recruit{
     display: none;
@@ -266,6 +276,12 @@ a{
         font-weight: 600;
         color: #fff;
     }
+    #header.fixed .pc_gnb .d1 a{
+        color: #000 !important   
+    }
+    #header.fixed .pc_recruit a{
+        color: #191919 !important
+    }
     /* 서브메뉴 */
     .pc_gnb_bg{
         display: none;
@@ -314,7 +330,6 @@ a{
         background-position: center;
     }
     .pc_recruit:hover a::after{
-        
         background-image: url(../img/main/ico_recruit.on.png);
     }
     

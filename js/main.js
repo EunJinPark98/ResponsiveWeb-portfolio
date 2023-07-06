@@ -13,6 +13,7 @@ $('.m1_slide').slick({
   atoplaySpeed : 500,
   speed : 1000,
 });
+
 // main 1 슬라이드 텍스트 등장
 $('.m1_text .on').show().animate({
   marginTop : '0',
@@ -29,7 +30,6 @@ $('.m1_slide').on('afterChange', function(event, slick, currentSlide) {
     opacity : '1'
   },1000);
 });
-
 
 // main 1 슬라이드 재생버튼
 $('.m1_play').click(function(){

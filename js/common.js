@@ -1,5 +1,13 @@
 // common.js
-
+// 브라우저 스크롤
+$(window).scroll(function(){
+    let st = $(window).scrollTop();
+    if(st >= 60){
+        $('#header').addClass('fixed');
+    }else {
+        $('#header').removeClass('fixed');
+    }
+});
 // 헤더 마우스 올리면 색상 변경
 $('#header').mouseover(function(){
     $(this).css({
@@ -27,14 +35,13 @@ $('#header').mouseover(function(){
     $('.pc_recruit a').css({
         color : '#fff'
     })
-
 });
 // 모바일 메뉴 열기
 $('.menuBtn').click(function(){
     $('.menu_top').fadeIn(function(){
         $('.menu_bottom').slideDown();
     });
-    // !!!!브라우저 스크롤바 없애야함!!!!
+    // @다시보기@ "브라우저 스크롤바 없애기"
     $(window).css({
         position : 'fixed',
         scroll : 'default'
@@ -63,7 +70,6 @@ $('.gnb .d1').click(function(){
 $('.pc_gnb .m1').mouseover(function(){
     $('.pc_gnb_bg').stop().slideDown();
     $(this).next().stop().slideDown();
-
 }).mouseout(function(){
     $('.pc_gnb_bg').stop().slideUp();
     $(this).next().stop().slideUp();
