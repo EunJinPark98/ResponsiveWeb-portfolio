@@ -15,15 +15,17 @@
 .m1_slide .bann_pc{
     display: none;
 }
+/* 슬라이드 텍스트 */
 /* @@@@위치 다시 봐야함@@@@@@ */
 .m1_text{
     position: absolute;
     left: 0;
     top: 30%;
+    padding: 0 20px;
     color: #fff;
 }
-.m1_text{
-    padding: 0 20px;
+.m1_txt_box{
+    display: none;
 }
 .m1_txt_box h1{
     padding-right: 25px;
@@ -69,8 +71,8 @@
     width: 0px;
     height: 0px;
     margin-top: 12px;
-    margin-left: 11px;
-    margin-right: 12px;
+    margin-left: 12px;
+    margin-right: 13px;
     border-left: 7px solid #fff;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
