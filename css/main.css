@@ -15,11 +15,34 @@
 .m1_slide .bann_pc{
     display: none;
 }
-.m1_txt{
+/* @@@@위치 다시 봐야함@@@@@@ */
+.m1_text{
     position: absolute;
-    /* 버튼하고 나서 위치 지정합시다@@ */
+    left: 0;
+    top: 30%;
+    color: #fff;
+}
+.m1_text{
+    padding: 0 20px;
+}
+.m1_txt_box h1{
+    padding-right: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.m1_txt_box div a{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 18px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
 }
 /* 슬라이드 버튼 */
+/* @@@@위치 다시 봐야함@@@@@@ */
 .m1_btn{
     position: absolute;
     bottom: 10px;
@@ -45,15 +68,16 @@
     display: none;
     width: 0px;
     height: 0px;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-left: 11px;
     margin-right: 12px;
-    border-left: 9px solid #fff;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+    border-left: 7px solid #fff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
 }
 .m1_pause{
     background-image: url(../img/main/ico_pause.png);
+    background-size: 8px auto;
 }
 .ms_pager{
     margin-right: 10px;
