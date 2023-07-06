@@ -19,16 +19,14 @@
     position: absolute;
     /* 버튼하고 나서 위치 지정합시다@@ */
 }
-
 /* 슬라이드 버튼 */
 .m1_btn{
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
-    background-color: pink;
 }
 .m1_prev, .m1_next, .m1_pause{
     width: 32px;
@@ -45,20 +43,22 @@
 }
 .m1_play{
     display: none;
-    width: 0;
-    height: 0;
-    border-left: 20px solid #fff;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    margin-left: 18px;
+    width: 0px;
+    height: 0px;
+    margin-top: 10px;
+    margin-left: 11px;
+    margin-right: 12px;
+    border-left: 9px solid #fff;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
 }
 .m1_pause{
-    margin-left: 18px;
     background-image: url(../img/main/ico_pause.png);
 }
 .ms_pager{
-    color: #fff;
+    margin-right: 10px;
     margin-top: 5px;
+    color: #fff;
 }
 .ms_pager li{
     display: none;

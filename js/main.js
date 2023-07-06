@@ -1,5 +1,6 @@
 // main.js
 
+// 본문 1 슬라이드
 $('.m1_slide').slick({
     dots : true,
     appendDots : '.ms_pager',
@@ -11,4 +12,13 @@ $('.m1_slide').slick({
     autoplay : true,
     atoplaySpeed : 500,
     speed : 1000,
+});
+
+$('.m1_pause').click(function(){
+  $(this).toggle();
+  $(this).siblings('.m1_play').show();
+});
+$('.m1_play').click(function(){
+  $(this).toggle();
+  $(this).siblings('.m1_pause').show();
 });
