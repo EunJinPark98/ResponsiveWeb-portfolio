@@ -271,10 +271,11 @@ a{
         margin-left: 25px;
         margin-right: 25px;
     }
-    .pc_gnb .d1 a{
+    .pc_gnb .d1 > a{
         font-size: 16px;
         font-weight: 600;
         color: #fff;
+        line-height: 74px;
     }
     #header.fixed .pc_gnb .d1 a{
         color: #000 !important   

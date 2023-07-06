@@ -1,5 +1,5 @@
 // common.js
-// 브라우저 스크롤
+// 브라우저 스크롤 이벤트 헤더고정
 $(window).scroll(function(){
     let st = $(window).scrollTop();
     if(st >= 60){
@@ -41,10 +41,8 @@ $('.menuBtn').click(function(){
     $('.menu_top').fadeIn(function(){
         $('.menu_bottom').slideDown();
     });
-    // @다시보기@ "브라우저 스크롤바 없애기"
-    $(window).css({
-        position : 'fixed',
-        scroll : 'default'
+    $('#wrap').css({
+        position: 'fixed'
     });
     return false;
 });
@@ -55,8 +53,8 @@ $('.menu_close').click(function(){
     });
     $('.menu_bottom .sub').stop().slideUp();
     $('.menu_bottom .m1').removeClass('on');
-    $(window).css({
-        position : 'relative'
+    $('#wrap').css({
+        position: 'relative'
     });
     return false;
 });
@@ -69,9 +67,9 @@ $('.gnb .d1').click(function(){
 // PC gnb 서브메뉴 열기
 $('.pc_gnb .m1').mouseover(function(){
     $('.pc_gnb_bg').stop().slideDown();
-    $(this).next().stop().slideDown();
+    $(this).next().show();
 }).mouseout(function(){
     $('.pc_gnb_bg').stop().slideUp();
-    $(this).next().stop().slideUp();
+    $(this).next().hide();
 });
 
