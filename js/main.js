@@ -1,6 +1,6 @@
 // main.js
 
-// main 1 슬라이드
+// 본문1 슬라이드
 $('.m1_slide').slick({
   dots : true,
   appendDots : '.ms_pager',
@@ -14,7 +14,7 @@ $('.m1_slide').slick({
   speed : 1000,
 });
 
-// main 1 슬라이드 텍스트 등장
+// 본문1 슬라이드 텍스트 등장
 $('.m1_text .on').show().animate({
   marginTop : '0',
   opacity : '1'
@@ -31,14 +31,14 @@ $('.m1_slide').on('afterChange', function(event, slick, currentSlide) {
   },1000);
 });
 
-// main 1 슬라이드 재생버튼
+// 본문1 슬라이드 재생버튼
 $('.m1_play').click(function(){
   $('.m1_slide').slick('slickPlay');
   $(this).hide();
   $('.m1_pause').show();
 });
 
-// main 1 슬라이드 멈춤버튼
+// 본문1 슬라이드 멈춤버튼
 $('.m1_pause').click(function(){
   $('.m1_slide').slick('slickPause');
   $(this).hide();

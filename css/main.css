@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* main.css 메인 */
-/* main 1 슬라이드 */
+
+/* 모바일 - 본문1(슬라이드) */
 #container{
-    background-color: lightyellow;
 }
 .main1{
     position: relative;
@@ -95,11 +95,49 @@
 .ms_pager .slick-active{
     display: block;
 }
-
+/* 모바일 - 본문2(회사소개) */
+.main2{
+    padding-top: 60px;
+}
+.main2 .title{
+    padding: 0 20px;
+}
+.main2 h2{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFB500;
+}
+.main2 .text{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #060B11;
+}
+.main2 .text u{
+   box-shadow: rgb(255, 235, 0) 0px -14px 0px inset;
+   text-decoration: none;
+}
+.main2 .btn_more{
+    display: flex;
+    justify-content: right;
+    text-indent: -99999px;
+}
+.main2 .btn_more a{
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/main/btn_more.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+.main2 .btn_more a:hover{
+    background-image: url(../img/main/btn_more_on.png);
+}
 
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
-    /* main 1 */
+    /* 테블릿 - 본문1(슬라이드) */
     .main1{
         margin-top: -73px;
     }
@@ -116,7 +154,7 @@
 
 /* pc 시작 */
 @media screen and (min-width:1920px) {
-    /* main 1 */
+    /* PC - 본문1(슬라이드) */
     .m1_slide .bann_mo{
         display: none;
     }

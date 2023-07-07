@@ -64,7 +64,9 @@ $('.gnb .d1').click(function(){
     $(this).find('.m1').toggleClass('on');
     return false;
 });
+
 // PC gnb 서브메뉴 열기
+// @@@@안됨!!!
 $('.pc_gnb .m1').mouseover(function(){
     $('.pc_gnb_bg').stop().slideDown();
     $(this).next().show();
@@ -72,4 +74,19 @@ $('.pc_gnb .m1').mouseover(function(){
     $('.pc_gnb_bg').stop().slideUp();
     $(this).next().hide();
 });
+
+// $('.pc_gnb .m1').mouseover(function(){
+//     $('.pc_gnb_bg').stop().slideDown();
+//     $(this).next().show();
+// }).mouseout(function(){
+//     var subOn = $('.pc_gnb .sub').is(":hover");
+//     var bgOn = $('.pc_gnb_bg').is(":hover");
+    
+//     if (!subOn && !bgOn) {
+//         $('.pc_gnb_bg').stop().slideUp();
+//         $('.pc_gnb .sub').hide();
+//     }
+// });
+
+
 
