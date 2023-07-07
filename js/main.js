@@ -47,6 +47,11 @@ $('.m1_pause').click(function(){
 
 // 본문2 이미지 슬라이드
 $('.m2_slide').slick({
+  infinite: true,
+  vertical: true,
   arrows : false,
-  
+  autoplay : true,
+  autoplaySpeed : 0,
+  speed : 8000
 });
+

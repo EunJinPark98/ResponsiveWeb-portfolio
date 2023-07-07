@@ -143,15 +143,16 @@
     position: relative;
 }
 .m2_slide p{
+    display: block;
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     width: 100%;
     font-size: 30px;
     font-weight: 600;
     text-align: center;
     color: #fff;
-
 }
+
 
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
