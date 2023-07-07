@@ -54,7 +54,3 @@ $('.m1_pause').click(function(){
   $('.m1_play').show();
 });
 
-// 본문3 이미지슬라이드
-$('.m3_slide').slick({
-  arrows : false,
-});
