@@ -2,8 +2,6 @@
 /* main.css 메인 */
 
 /* 모바일 - 본문1(슬라이드) */
-#container{
-}
 .main1{
     position: relative;
     margin-top: -60px;
@@ -96,8 +94,45 @@
     display: block;
 }
 /* 모바일 - 본문2 */
-
+.main2{
+    padding-top: 68px;
+    padding-bottom: 100px;
+    background-image: url(../img/main/info_bg.png);
+    background-repeat: no-repeat;
+    background-size: 130% auto;
+    background-position: bottom -30% center;
+}
+.main2 .inner{
+    margin: 0 20px;
+}
+.main2 .m2_title{
+    margin-bottom: 20px;
+}
+.main2 .m2_title img{
+    width: 100%;
+}
+.main2 .m2_content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main2 .m2_box{
+    width: 47%;
+    margin-bottom: 60px;
+}
+.main2 .m2_box h6{
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+.main2 .m2_box p{
+    font-size: 13px;
+    color: #666;
+}
 /* 모바일 - 본문3 */
+
 .main3{
     padding-top: 60px;
 }
@@ -258,4 +293,8 @@
         font-size: 16px;
     }
     /* 테블릿 - 본문3 */
+    .main3 .inner{
+        width: 1440px;
+        margin: 0 auto;
+    }
 }/* pc 끝 */

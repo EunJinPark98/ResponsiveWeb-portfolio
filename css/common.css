@@ -37,10 +37,6 @@ a{
     position: relative;
     width: 100%;
 }
-.inner{
-    width: 1440px;
-    margin: 0 auto;
-}
 /* 모바일 헤더*/
 #header{
     z-index: 1001;
