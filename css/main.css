@@ -114,12 +114,13 @@
     color: #060B11;
 }
 .main2 .text u{
-   box-shadow: rgb(255, 235, 0) 0px -14px 0px inset;
-   text-decoration: none;
+    box-shadow: rgb(255, 235, 0) 0px -14px 0px inset;
+    text-decoration: none;
 }
 .main2 .btn_more{
     display: flex;
     justify-content: right;
+    margin-bottom: 10px;
     text-indent: -99999px;
 }
 .main2 .btn_more a{
@@ -133,6 +134,23 @@
 }
 .main2 .btn_more a:hover{
     background-image: url(../img/main/btn_more_on.png);
+}
+.m2_slide img{
+    width: 100%;
+    height: auto;
+}
+.m2_slide .slide_box{
+    position: relative;
+}
+.m2_slide p{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+
 }
 
 /* 테블릿 시작 */

@@ -44,3 +44,9 @@ $('.m1_pause').click(function(){
   $(this).hide();
   $('.m1_play').show();
 });
+
+// 본문2 이미지 슬라이드
+$('.m2_slide').slick({
+  arrows : false,
+  
+});
