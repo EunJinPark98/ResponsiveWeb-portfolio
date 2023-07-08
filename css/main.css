@@ -95,21 +95,26 @@
 }
 /* 모바일 - 본문2 */
 .main2{
-    padding-top: 68px;
+    margin-top: 68px;
     padding-bottom: 100px;
     background-image: url(../img/main/info_bg.png);
     background-repeat: no-repeat;
     background-size: 130% auto;
-    background-position: bottom -30% center;
+    background-position: bottom -40% center;
 }
 .main2 .inner{
     margin: 0 20px;
 }
 .main2 .m2_title{
+    width: 205px;
     margin-bottom: 20px;
 }
 .main2 .m2_title img{
     width: 100%;
+    height: auto;
+}
+.main2 .m2_title img.ta{
+    display: none;
 }
 .main2 .m2_content{
     display: flex;
@@ -128,11 +133,11 @@
     border-bottom: 1px solid rgba(0,0,0,0.12);
 }
 .main2 .m2_box p{
+    margin: 0 10px;
     font-size: 13px;
     color: #666;
 }
 /* 모바일 - 본문3 */
-
 .main3{
     padding-top: 60px;
 }
@@ -244,6 +249,39 @@
         padding: 14px 36px;
         font-size: 15px;
     }
+    /* 테블릿 - 본문2 */
+    .main2{
+        background-size: 80% auto;
+        background-position: top -30% right -80%;
+    }
+    .main2 .inner{
+        margin: 0 40px;
+    }
+    .main2 .m2_title{
+        width: 440px;
+        padding-top: 80px;
+    }
+    .main2 .m2_title img.ta{
+        display: block;
+    }
+    .main2 .m2_title img.mo{
+        display: none;
+    }
+    .main2 .m2_content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main2 .m2_box{
+        width: 20%;
+        margin-bottom: 60px;
+    }
+    .main2 .m2_box h6{
+        padding: 12px;
+        font-size: 21px;
+    }
+    .main2 .m2_box p{
+        font-size: 17px;
+    }
     /* 테블릿 - 본문3 */
     .main3 .box3 .content{
         padding: 50px 30px;
@@ -291,6 +329,26 @@
         margin-top: 53px;
         padding: 16px 40px;
         font-size: 16px;
+    }
+    /* 테블릿 - 본문2 */
+    .main2{
+        background-size: 50% auto;
+        background-position: top 0 right 0;
+    }
+    .main2 .inner{
+        margin: 0 auto;
+        width: 1440px;
+    }
+    .main2 .m2_title{
+        width: 570px;
+        padding-top: 100px;
+    }
+    .main2 .m2_content{
+        justify-content: left;
+    }
+    .main2 .m2_box{
+        width: 10%;
+        margin-right: 50px;
     }
     /* 테블릿 - 본문3 */
     .main3 .inner{
