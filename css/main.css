@@ -95,6 +95,7 @@
 }
 /* 모바일 - 본문2 */
 .main2{
+    margin-bottom: 50px;
     background-image: url(../img/main/info_bg.png);
     background-repeat: no-repeat;
     background-size: 80% auto;
@@ -138,7 +139,7 @@
 }
 /* 모바일 - 본문3 */
 .main3{
-    padding-top: 60px;
+    margin-bottom: 50px;
 }
 .main3 .box{
     margin-bottom: 60px;
