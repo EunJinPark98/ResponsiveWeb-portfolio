@@ -95,18 +95,19 @@
 }
 /* 모바일 - 본문2 */
 .main2{
-    margin-top: 68px;
+    /* margin-top: 68px; */
     padding-bottom: 100px;
     background-image: url(../img/main/info_bg.png);
     background-repeat: no-repeat;
-    background-size: 130% auto;
-    background-position: bottom -40% center;
+    background-size: 80% auto;
+    background-position: top -20% right -80%;
 }
 .main2 .inner{
     margin: 0 20px;
 }
 .main2 .m2_title{
     width: 205px;
+    padding-top: 40px;
     margin-bottom: 20px;
 }
 .main2 .m2_title img{
@@ -250,10 +251,6 @@
         font-size: 15px;
     }
     /* 테블릿 - 본문2 */
-    .main2{
-        background-size: 80% auto;
-        background-position: top -30% right -80%;
-    }
     .main2 .inner{
         margin: 0 40px;
     }
@@ -331,10 +328,7 @@
         font-size: 16px;
     }
     /* 테블릿 - 본문2 */
-    .main2{
-        background-size: 50% auto;
-        background-position: top 0 right 0;
-    }
+
     .main2 .inner{
         margin: 0 auto;
         width: 1440px;
