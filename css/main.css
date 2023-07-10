@@ -224,6 +224,9 @@
         font-weight: 500;
     }
     /* 테블릿 - 본문3 */
+    .main3{
+        margin-bottom: 80px;
+    }
     .main3 .inner{
         display: flex;
         justify-content: space-between;
@@ -235,6 +238,7 @@
     .main3 .box{
         box-sizing: border-box;
         width: 50%;
+        margin-bottom: 80px;
     }
 }/* 테블릿 끝 */
 
@@ -276,6 +280,9 @@
         margin-right: auto;
     }  
     /* PC - 본문3 */
+    .main3{
+        margin-bottom: 200px;
+    }
     .main3 .inner{
         width: 1440px;
         margin: 0 auto;
