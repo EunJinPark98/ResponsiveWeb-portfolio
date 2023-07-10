@@ -129,11 +129,29 @@
 .main3{
     margin-bottom: 50px;
 }
-.main3 .box{
-    margin-bottom: 60px;
-}
-.main3 .title{
+.main3 h1.title{
+    width: 100%;
     padding: 0 20px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.main3 h1.title u{
+    box-shadow: rgb(255, 235, 0) 0px -14px 0px inset;
+    text-decoration: none;
+}
+.main3 h1.title::after{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/main/Lion.png);
+    background-size: 100% auto;
+    background-position: center;
+}
+.main3 .box{
+    padding: 0 20px;
+    margin-bottom: 40px;
 }
 .main3 h2{
     font-size: 16px;
@@ -145,10 +163,6 @@
     font-weight: 600;
     letter-spacing: 1px;
     color: #060B11;
-}
-.main3 .text u{
-    box-shadow: rgb(255, 235, 0) 0px -14px 0px inset;
-    text-decoration: none;
 }
 .main3 .btn_more{
     display: flex;
@@ -215,6 +229,7 @@
         flex-wrap: wrap;
     }
     .main3 .box{
+        box-sizing: border-box;
         width: 50%;
     }
 }/* 테블릿 끝 */
@@ -247,7 +262,7 @@
         padding: 16px 40px;
         font-size: 16px;
     }
-    /* 테블릿 - 본문2 */
+    /* PC - 본문2 */
     .main2{
         padding-bottom: 200px;
     }
@@ -255,9 +270,8 @@
         width: 1440px;
         margin-left: auto;
         margin-right: auto;
-    }
-    
-    /* 테블릿 - 본문3 */
+    }  
+    /* PC - 본문3 */
     .main3 .inner{
         width: 1440px;
         margin: 0 auto;
