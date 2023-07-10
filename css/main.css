@@ -113,7 +113,7 @@
 }
 .newsList img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .newsList .cate{
     margin-top: 10px;
@@ -147,6 +147,7 @@
     height: 50px;
     background-image: url(../img/main/Lion.png);
     background-size: 100% auto;
+    background-repeat: no-repeat;
     background-position: center;
 }
 .main3 .box{
@@ -228,6 +229,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    .main3 h1.title{
+        font-size: 40px;
+    }
     .main3 .box{
         box-sizing: border-box;
         width: 50%;
@@ -275,6 +279,14 @@
     .main3 .inner{
         width: 1440px;
         margin: 0 auto;
+    }
+    .main3 h1.title{
+        font-size: 60px;
+        margin-bottom: 80px;
+    }
+    .main3 h1.title::after{
+        width: 80px;
+        height: 80px;
     }
     .main3 .box{
         width: 33.33%;
