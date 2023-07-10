@@ -195,12 +195,16 @@
         font-size: 15px;
     }
     /* 테블릿 - 본문2 */
+    .main2{
+        margin-bottom: 80px;
+    }
     .main2 .inner{
         margin: 0 40px;
     }
     .main2 .m2_title{
         width: 440px;
         padding-top: 80px;
+        margin-bottom: 60px;
     }
     .main2 .m2_title img.ta{
         display: block;
@@ -263,6 +267,9 @@
         font-size: 16px;
     }
     /* 테블릿 - 본문2 */
+    .main2{
+        margin-bottom: 120px;
+    }
     .main2 .inner{
         margin: 0 auto;
         width: 1440px;
@@ -270,9 +277,11 @@
     .main2 .m2_title{
         width: 570px;
         padding-top: 100px;
+        margin-bottom: 80px;
     }
     .main2 .m2_content{
         justify-content: left;
+        padding-bottom: 100px;
     }
     .main2 .m2_box{
         width: 10%;
