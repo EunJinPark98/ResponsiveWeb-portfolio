@@ -54,3 +54,14 @@ $('.m1_pause').click(function(){
   $('.m1_play').show();
 });
 
+// 본문4 무한롤링배너
+let roller = document.querySelector('.bann_list');
+roller.id = 'roller1';
+let clone = roller.cloneNode(true);
+clone.id = 'roller2';
+document.querySelector('.bann_list ul').appendChild(clone);
+document.querySelector('#roller1').style.left = '0px';
+document.querySelector('#roller2').style.left = document.querySelector('.bann_list').offsetWidth + 'px';
+
+roller.classList.add('original');
+clone.classList.add('clone');

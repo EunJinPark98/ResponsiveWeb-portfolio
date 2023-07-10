@@ -180,6 +180,42 @@
 .main3 .btn_more a:hover{
     background-image: url(../img/main/btn_more_on.png);
 }
+/* 모바일 - 본문4(움직이는 배너) */
+.main4 {
+    background-color: #559CDE;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .bann_list {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .bann_list ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    animation: rollingleft 20s linear infinite;
+  }
+  
+  .bann_list img {
+    width: 180px;
+    height: auto;
+  }
+  
+  @keyframes rollingleft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-180px * 12));
+    }
+  }
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
     /* 테블릿 - 본문1(슬라이드) */
