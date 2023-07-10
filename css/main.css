@@ -95,47 +95,35 @@
 }
 /* 모바일 - 본문2 */
 .main2{
-    margin-bottom: 50px;
-    background-image: url(../img/main/info_bg.png);
-    background-repeat: no-repeat;
-    background-size: 80% auto;
-    background-position: top -20% right -80%;
+    padding-top: 77px;
+    padding-bottom: 93px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-.main2 .inner{
-    margin: 0 20px;
+.main2 h1.title{
+    margin-bottom: 46px;
 }
-.main2 .m2_title{
-    width: 205px;
-    padding-top: 40px;
-    margin-bottom: 20px;
-}
-.main2 .m2_title img{
+.main2 .title img{
     width: 100%;
     height: auto;
 }
-.main2 .m2_title img.ta{
-    display: none;
+.newsList .box{
+    margin-bottom: 30px;
+    width: 100%;
 }
-.main2 .m2_content{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.newsList img{
+    width: 100%;
+    height: auto;
 }
-.main2 .m2_box{
-    width: 47%;
-    margin-bottom: 60px;
-}
-.main2 .m2_box h6{
-    padding: 6px;
+.newsList .cate{
+    margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    border-bottom: 1px solid rgba(0,0,0,0.12);
+    font-size: 11px;
+    color: #444;
 }
-.main2 .m2_box p{
-    margin: 0 10px;
-    font-size: 13px;
-    color: #666;
+.newsList .title{
+    font-size: 15px;
+    color: #191919;
 }
 /* 모바일 - 본문3 */
 .main3{
@@ -180,42 +168,6 @@
 .main3 .btn_more a:hover{
     background-image: url(../img/main/btn_more_on.png);
 }
-/* 모바일 - 본문4(움직이는 배너) */
-.main4 {
-    background-color: #559CDE;
-  }
-  
-  .title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #fff;
-  }
-  
-  .bann_list {
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .bann_list ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    animation: rollingleft 20s linear infinite;
-  }
-  
-  .bann_list img {
-    width: 180px;
-    height: auto;
-  }
-  
-  @keyframes rollingleft {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-180px * 12));
-    }
-  }
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
     /* 테블릿 - 본문1(슬라이드) */
@@ -232,36 +184,29 @@
     }
     /* 테블릿 - 본문2 */
     .main2{
-        margin-bottom: 80px;
+        padding-top: 100px;
+        padding-bottom: 130px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
-    .main2 .inner{
-        margin: 0 40px;
+    .main2 h1.title{
+        width: 50%;
     }
-    .main2 .m2_title{
-        width: 440px;
-        padding-top: 80px;
-        margin-bottom: 60px;
-    }
-    .main2 .m2_title img.ta{
-        display: block;
-    }
-    .main2 .m2_title img.mo{
-        display: none;
-    }
-    .main2 .m2_content{
+    .newsList{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
-    .main2 .m2_box{
-        width: 20%;
+    .newsList .box{
+        width: 45%;
         margin-bottom: 60px;
     }
-    .main2 .m2_box h6{
-        padding: 12px;
-        font-size: 21px;
+    .newsList .cate{
+        font-size: 13px;
     }
-    .main2 .m2_box p{
-        font-size: 17px;
+    .newsList .title{
+        font-size: 19px;
+        font-weight: 500;
     }
     /* 테블릿 - 본문3 */
     .main3 .inner{
@@ -304,25 +249,14 @@
     }
     /* 테블릿 - 본문2 */
     .main2{
-        margin-bottom: 120px;
+        padding-bottom: 200px;
     }
     .main2 .inner{
-        margin: 0 auto;
         width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .main2 .m2_title{
-        width: 570px;
-        padding-top: 100px;
-        margin-bottom: 80px;
-    }
-    .main2 .m2_content{
-        justify-content: left;
-        padding-bottom: 100px;
-    }
-    .main2 .m2_box{
-        width: 10%;
-        margin-right: 50px;
-    }
+    
     /* 테블릿 - 본문3 */
     .main3 .inner{
         width: 1440px;
