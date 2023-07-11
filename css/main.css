@@ -189,21 +189,21 @@ h1.title::after{
     background-image: url(../img/main/Lion.png);
 }
 .main4 .slide1{
-    /* display: flex; */
+    display: flex;
     overflow: hidden;
 }
+.main4 .slide1 > div{
+    position: relative;
+}
 .main4 .slide1 > div a{
+    padding: 20px;
     display: block;
     border-radius: 12px;
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-}
-.main4 .slide1 > div a:hover{
-    background-color: #001EFF;
-    background-image: none;
 }
 .main4 .box1 a{
     background-image: url(../img/main/service1.gif);
@@ -215,19 +215,48 @@ h1.title::after{
     background-image: url(../img/main/service3.gif);
 }
 .main4 .box4 a{
-    background-image: url(../img/main/service4.gif);
+    background-image: url(../img/main/service4.jpg);
 }
 .main4 .box5 a{
     background-image: url(../img/main/service5.gif);
 }
 .main4 .box6 a{
-    background-image: url(../img/main/service6.gif);
+    background-image: url(../img/main/service6.jpg);
 }
 .main4 .box7 a{
     background-image: url(../img/main/service7.gif);
 }
 .main4 .box8 a{
-    background-image: url(../img/main/service8.gif);
+    background-image: url(../img/main/service8.jpg);
+}
+.main4 .slide1 > div:not(.box3, .box5) a:hover{
+    background-color: #001EFF;
+    background-image: none;
+}
+.main4 .name, .main4 .text{
+    display: none;
+}
+.main4 .slide1 > div a:hover .name{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+.main4 .slide1 > div a:hover .text{
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+}
+.main4 .mark{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+.main4 .slide1 > div a:hover .mark{
+    color: #fff;
 }
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
