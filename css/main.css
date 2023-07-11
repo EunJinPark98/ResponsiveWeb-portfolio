@@ -189,13 +189,16 @@ h1.title::after{
     background-image: url(../img/main/Lion.png);
 }
 .main4 .slide1{
+    margin-bottom: 5px;
+}
+.main4 .slide1, .main4 .slide2{
     display: flex;
-    overflow: hidden;
 }
-.main4 .slide1 > div{
+.main4 .slide1 > div, .main4 .slide2 > div{
     position: relative;
+    margin-right: 10px;
 }
-.main4 .slide1 > div a{
+.main4 .slide1 > div a, .main4 .slide2 > div a{
     padding: 20px;
     display: block;
     border-radius: 12px;
@@ -205,28 +208,28 @@ h1.title::after{
     background-size: 100% 100%;
     background-position: center;
 }
-.main4 .box1 a{
+.main4 .slide1 .box1 a{
     background-image: url(../img/main/service1.gif);
 }
-.main4 .box2 a{
+.main4 .slide1 .box2 a{
     background-image: url(../img/main/service2.jpg);
 }
-.main4 .box3 a{
+.main4 .slide1 .box3 a{
     background-image: url(../img/main/service3.gif);
 }
-.main4 .box4 a{
+.main4 .slide1 .box4 a{
     background-image: url(../img/main/service4.jpg);
 }
-.main4 .box5 a{
+.main4 .slide1 .box5 a{
     background-image: url(../img/main/service5.gif);
 }
-.main4 .box6 a{
+.main4 .slide1 .box6 a{
     background-image: url(../img/main/service6.jpg);
 }
-.main4 .box7 a{
+.main4 .slide1 .box7 a{
     background-image: url(../img/main/service7.gif);
 }
-.main4 .box8 a{
+.main4 .slide1 .box8 a{
     background-image: url(../img/main/service8.jpg);
 }
 .main4 .slide1 > div:not(.box3, .box5) a:hover{
@@ -257,6 +260,69 @@ h1.title::after{
 }
 .main4 .slide1 > div a:hover .mark{
     color: #fff;
+}
+.main4 .slide1 > div:not(.box3, .box5) a:hover .btn_more{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/main/btn_more_on.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+.main4 .slide2 .box1 a{
+    background-image: url(../img/main/service2_1.gif);
+}
+.main4 .slide2 .box2 a{
+    background-image: url(../img/main/service2_2.gif);
+}
+.main4 .slide2 .box3 a{
+    background-image: url(../img/main/service2_3.jpg);
+}
+.main4 .slide2 .box4 a{
+    background-image: url(../img/main/service2_4.jpg);
+}
+.main4 .slide2 .box5 a{
+    background-image: url(../img/main/service2_5.gif);
+}
+.main4 .slide2 .box6 a{
+    background-image: url(../img/main/service2_6.jpg);
+}
+.main4 .slide2 > div:not(.box1, .box5) a:hover{
+    background-color: #001EFF;
+    background-image: none;
+}
+.main4 .name, .main4 .text{
+    display: none;
+}
+.main4 .slide2 > div a:hover .name{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+.main4 .slide2 > div a:hover .text{
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+}
+.main4 .slide2 > div a:hover .mark{
+    color: #fff;
+}
+.main4 .slide2 > div:not(.box1, .box5) a:hover .btn_more{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/main/btn_more_on.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
