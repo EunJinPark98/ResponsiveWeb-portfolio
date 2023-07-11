@@ -132,7 +132,7 @@
 h1.title{
     width: 100%;
     padding: 0 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 30px;
     font-weight: 700;
 }
@@ -187,6 +187,47 @@ h1.title::after{
 /* 모바일 - 본문4(기술과 서비스) */
 .main4 h1.title::after{
     background-image: url(../img/main/Lion.png);
+}
+.main4 .slide1{
+    /* display: flex; */
+    overflow: hidden;
+}
+.main4 .slide1 > div a{
+    display: block;
+    border-radius: 12px;
+    width: 180px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.main4 .slide1 > div a:hover{
+    background-color: #001EFF;
+    background-image: none;
+}
+.main4 .box1 a{
+    background-image: url(../img/main/service1.gif);
+}
+.main4 .box2 a{
+    background-image: url(../img/main/service2.jpg);
+}
+.main4 .box3 a{
+    background-image: url(../img/main/service3.gif);
+}
+.main4 .box4 a{
+    background-image: url(../img/main/service4.gif);
+}
+.main4 .box5 a{
+    background-image: url(../img/main/service5.gif);
+}
+.main4 .box6 a{
+    background-image: url(../img/main/service6.gif);
+}
+.main4 .box7 a{
+    background-image: url(../img/main/service7.gif);
+}
+.main4 .box8 a{
+    background-image: url(../img/main/service8.gif);
 }
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
