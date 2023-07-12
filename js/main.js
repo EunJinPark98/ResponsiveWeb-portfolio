@@ -54,4 +54,4 @@ $('.m1_pause').click(function(){
   $('.m1_play').show();
 });
 
-// 본문4
+// 본문4(서비스 롤링배너)
