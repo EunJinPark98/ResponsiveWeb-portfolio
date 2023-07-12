@@ -93,7 +93,7 @@
 .ms_pager .slick-active{
     display: block;
 }
-/* 모바일 - 본문2 */
+/* 모바일 - 본문2(보도자료) */
 .main2{
     padding-top: 77px;
     padding-bottom: 90px;
@@ -126,7 +126,7 @@
     font-size: 15px;
     color: #191919;
 }
-/* 모바일 - 본문3 */
+/* 모바일 - 본문3(비즈니스) */
 .main3{
     margin-bottom: 90px;
 }
@@ -186,6 +186,9 @@ h1.title::after{
     background-image: url(../img/main/btn_more_on.png);
 }
 /* 모바일 - 본문4(기술과 서비스) */
+.main4{
+    margin-bottom: 90px;
+}
 .main4 h1.title::after{
     background-image: url(../img/main/Lion.png);
 }
@@ -325,6 +328,32 @@ h1.title::after{
     background-position: center;
     background-size: 100% auto;
 }
+/* 모바일 - 본문5(문의하기) */
+.main5{
+    background-image: url(../img/main/inquiry_bann.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.main5 .inner{
+    padding: 40px 40px 50px 40px;
+}
+.main5 p{
+    margin-bottom: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    color: #191919;
+}
+.main5 .inquiry_bt{
+    text-align: center;
+}
+.main5 .inquiry_bt a{
+    font-size: 12px;
+    color: #fff;
+    padding: 8px 40px 12px;
+    border-radius: 20px;
+    background-color: #191919;
+}
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
     /* 테블릿 - 본문1(슬라이드) */
@@ -389,6 +418,24 @@ h1.title::after{
         width: 50%;
         margin-bottom: 80px;
     }
+    /* 테블릿 - 본문4 */
+    .main4{
+        margin-bottom: 90px;
+    }
+    /* 테블릿 - 본문5 */
+    .main5 .inner{
+        padding: 50px 50px 60px 50px;
+    }
+    .main5 p{
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .main5 .inquiry_bt a{
+        font-size: 15px;
+        padding: 12px 56px 16px;
+        border-radius: 40px;
+    
+    }
 }/* 테블릿 끝 */
 
 /* pc 시작 */
@@ -443,5 +490,31 @@ h1.title::after{
     .main3 .box{
         width: 33.33%;
     }
-    /*dd  */
+    /* PC - 본문4  */
+    .main4{
+        margin-bottom: 200px;
+    }
+    /* PC - 본문5 */
+    .main5{
+        background-image: url(../img/main/inquiry_bann_pc.png);
+        background-color: #eee;
+    }
+    .main5 .inner{
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 80px 90px 80px;
+    }
+    .main5 p{
+        margin-bottom: 0;
+        font-size: 38px;
+    }
+    .main5 .inquiry_bt a{
+        font-size: 16px;
+        padding: 14px 57px 18px;
+        border-radius: 50px;
+    }
 }/* pc 끝 */
