@@ -75,18 +75,12 @@ $('.pc_gnb .m1').mouseover(function(){
     $(this).next().hide();
 });
 
-// $('.pc_gnb .m1').mouseover(function(){
-//     $('.pc_gnb_bg').stop().slideDown();
-//     $(this).next().show();
-// }).mouseout(function(){
-//     var subOn = $('.pc_gnb .sub').is(":hover");
-//     var bgOn = $('.pc_gnb_bg').is(":hover");
-    
-//     if (!subOn && !bgOn) {
-//         $('.pc_gnb_bg').stop().slideUp();
-//         $('.pc_gnb .sub').hide();
-//     }
-// });
-
+// 푸터 - 관련사이트 열기
+$('.site').click(function(){
+    $(this).find(span).animate({
+        transform : rotate('45deg')
+    });
+    $('.site_open').slideToggle();
+});
 
 

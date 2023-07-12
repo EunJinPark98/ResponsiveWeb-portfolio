@@ -226,6 +226,59 @@ a{
     background-position: center;
     background-size: 18px auto;
 }
+/* 모바일 - 푸터 */
+#footer{
+    background-color: #F8F9FA;
+}
+#footer .inner{
+    padding: 30px 20px;
+}
+/* 관련 사이트 */
+.site_fr{
+    position: relative;
+}
+.site{
+    position: relative;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 16px;
+    border: 1px solid #87929C;
+    color: #87929C;
+}
+.site span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/main/ico_plus.png);
+    background-size: 100% auto;
+    background-position: center;
+}
+.site_open{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border: 1px solid #87929C;
+    border-top: none;
+}
+.site_open dt{
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #191919;
+}
+.site_open dd{
+    margin-bottom: 20px;
+}
+.site_open a{
+    font-size: 12px;
+    color: #87929C;
+}
+
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
     /* 헤더 */

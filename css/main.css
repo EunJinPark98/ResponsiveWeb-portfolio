@@ -330,6 +330,7 @@ h1.title::after{
 }
 /* 모바일 - 본문5(문의하기) */
 .main5{
+    margin-bottom: 90px;
     background-image: url(../img/main/inquiry_bann.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -423,6 +424,9 @@ h1.title::after{
         margin-bottom: 90px;
     }
     /* 테블릿 - 본문5 */
+    .main5{
+        margin-bottom: 90px;
+    }
     .main5 .inner{
         padding: 50px 50px 60px 50px;
     }
@@ -496,6 +500,7 @@ h1.title::after{
     }
     /* PC - 본문5 */
     .main5{
+        margin-bottom: 200px;
         background-image: url(../img/main/inquiry_bann_pc.png);
         background-color: #eee;
     }
