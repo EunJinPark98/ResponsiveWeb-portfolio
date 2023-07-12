@@ -185,9 +185,6 @@ h1.title::after{
     background-image: url(../img/main/btn_more_on.png);
 }
 /* 모바일 - 본문4(기술과 서비스) */
-.main4{
-    margin-bottom: 90px;
-}
 .main4 h1.title::after{
     background-image: url(../img/main/Lion.png);
 }
@@ -327,42 +324,6 @@ h1.title::after{
     background-position: center;
     background-size: 100% auto;
 }
-/* 모바일 - 본문 5 */
-.main5{
-    
-}
-.main5 .inner{
-
-}
-.main5 .custCase{
-    padding: 20px;
-    overflow: hidden;
-    background-image: url(../img/main/customer_bann.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.main5 .title{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 19px;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-}
-.btn_custCase{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.btn_custCase a{
-    font-size: 12px;
-    font-weight: 500;
-    padding: 11px 25px;
-    border-radius: 30px;
-    background-color: #fff;
-    color: #191919;
-}
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
     /* 테블릿 - 본문1(슬라이드) */
@@ -419,23 +380,6 @@ h1.title::after{
         box-sizing: border-box;
         width: 50%;
         margin-bottom: 80px;
-    }
-    /* 테블릿 - 본문5 */
-    .main5 .inner{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .main5 .title{
-        margin-top: 40px;
-        margin-bottom: 30px;
-        font-size: 28px;
-    }
-    .btn_custCase{
-        margin-bottom: 40px;
-    }
-    .btn_custCase a{
-        font-size: 15px;
-        padding: 14px 36px;
     }
 }/* 테블릿 끝 */
 
