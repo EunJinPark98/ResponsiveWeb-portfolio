@@ -101,11 +101,12 @@
     margin-right: 20px;
 }
 .main2 .title{
+    width: 100%;
     margin-bottom: 46px;
 }
 .main2 .title img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .newsList .box{
     margin-bottom: 30px;
@@ -347,6 +348,7 @@ h1.title::after{
     }
     .main2 .title{
         width: 50%;
+        margin-bottom: 60px;
     }
     .newsList{
         display: flex;
@@ -354,13 +356,19 @@ h1.title::after{
         flex-wrap: wrap;
     }
     .newsList .box{
-        width: 45%;
+        padding-right: 20px;
+        box-sizing: border-box;
+        width: 50%;
         margin-bottom: 60px;
+    }
+    .newsList .box:nth-child(even){
+        padding-right: 0;
     }
     .newsList .cate{
         font-size: 13px;
     }
     .newsList .title{
+        width: 100%;
         font-size: 19px;
         font-weight: 500;
     }
