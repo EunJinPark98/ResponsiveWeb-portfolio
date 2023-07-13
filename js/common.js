@@ -76,10 +76,10 @@ $('.pc_gnb .m1').mouseover(function(){
 });
 
 // 푸터 - 관련사이트 열기
-$('.site').click(function(){
-    // $(this).find(span).animate({
-        
-    // });
+$('.site').click(function() {
+    $(this).find('span').animate({
+        rotate: '-=45deg'
+    });
     $('.site_open').slideToggle();
 });
 
