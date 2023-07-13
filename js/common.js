@@ -66,7 +66,7 @@ $('.gnb .d1').click(function(){
 });
 
 // PC gnb 서브메뉴 열기
-// @@@@안됨!!!
+// @@@@@@@안됨@@@@@@
 $('.pc_gnb .m1').mouseover(function(){
     $('.pc_gnb_bg').stop().slideDown();
     $(this).next().show();
@@ -80,12 +80,12 @@ $('.site').click(function() {
     $(this).find('span').animate({
         rotate: '-=45deg'
     });
-    $('.site_open').slideToggle();
+    $('.site_open').toggle();
 });
 
 // 푸터 - gnb 서브메뉴 열기
 $('.f_gnb .d1').click(function(){
-    $(this).find('.sub').slideToggle();
+    $(this).find('.sub').toggle();
     $(this).find('span').animate({
         rotate: '-=180deg'
     });

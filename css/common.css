@@ -242,7 +242,7 @@ a{
     line-height: 40px;
     padding-left: 16px;
     margin-bottom: 20px;
-    border: 1px solid #87929C;
+    border: 1px solid #ccc;
     color: #87929C;
 }
 .site span{
@@ -258,12 +258,14 @@ a{
 }
 .site_open{
     display: none;
+}
+.site_open_in{
     position: absolute;
     top: 40px;
-    left: 0;
     right: 0;
+    left: 0;
     padding: 20px;
-    border: 1px solid #87929C;
+    border: 1px solid #ccc;
     border-top: none;
     background-color: #F8F9FA;
     z-index: 1000;
@@ -273,8 +275,11 @@ a{
     font-size: 13px;
     color: #191919;
 }
-.site_open dd{
+.site_open dl{
     margin-bottom: 20px;
+}
+.site_open dl:last-child{
+    margin-bottom: 0;
 }
 .site_open a{
     font-size: 12px;
@@ -282,7 +287,7 @@ a{
 }
 /* 푸터 gnb */
 .f_gnb{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .f_gnb .m1 span{
     display: inline-block;
@@ -300,6 +305,7 @@ a{
 }
 .f_gnb > ul > li > a{
     font-size: 12px;
+    font-weight: 500;
     line-height: 30px;
     color: #060B117A;
 }
@@ -322,6 +328,9 @@ a{
     color: #060B117A;
 }
 /* 푸터 sns */
+.f_sns{
+    margin-bottom: 20px;
+}
 .f_sns ul{
     display: flex;
     text-indent: -99999px;
@@ -331,7 +340,6 @@ a{
     width: 31px;
     height: 31px;
     margin-right: 20px;
-    /* background-color: blue; */
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
@@ -351,7 +359,12 @@ a{
 .f_sns .kakaoTalk a{
     background-image: url(../img/main/ico_kakaoTalk.png);
 }
-
+/* 푸터 - corp */
+.f_corp{
+    font-size: 12px;
+    font-weight: 500;
+    color: #191919;
+}
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
     /* 헤더 */
@@ -365,7 +378,47 @@ a{
     .menu_top_in{
         height: 73px;
     }
-
+    /* 테블릿 푸터 */
+    #footer .inner{
+        height: 180px;
+        position: relative;
+    }
+    #footer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .site{
+        width: 144px;
+        float: right;
+    }
+    .site_open_in{
+        display: flex;
+        width: 320px;
+        top: -199px;
+        left: auto;
+        border-top: 1px solid #ccc;
+    }
+    .f_gnb{
+        float: left;
+    }
+    .f_gnb > ul{
+        display: flex;
+    }
+    .f_gnb > ul > li > a{
+        font-size: 14px;
+        padding-right: 24px;
+    }
+    .f_sns{
+        position: absolute;
+        left: 20px;
+        bottom: 50px;
+    }
+    .f_corp{
+        position: absolute;
+        left: 20px;
+        bottom: 30px;
+    }
 }/* 테블릿 끝 */
 
 /* pc 시작 */
@@ -463,6 +516,7 @@ a{
     #footer .inner{
         width: 1440px;
         margin: 0 auto;
+        padding: 60px 20px;
     }
 }/* pc 끝 */
 
