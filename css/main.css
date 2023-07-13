@@ -498,6 +498,9 @@ h1.title::after{
     .main4{
         margin-bottom: 200px;
     }
+    .main4 .inner{
+        width: 1440px;
+    }
     /* PC - 본문5 */
     .main5{
         margin-bottom: 200px;

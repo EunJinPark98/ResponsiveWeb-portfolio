@@ -83,6 +83,14 @@ $('.site').click(function() {
     $('.site_open').slideToggle();
 });
 
+// 푸터 - gnb 서브메뉴 열기
+$('.f_gnb .d1').click(function(){
+    $(this).find('.sub').slideToggle();
+    $(this).find('span').animate({
+        rotate: '-=180deg'
+    });
+    return false;
+})
 
 
 

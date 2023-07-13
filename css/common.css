@@ -48,7 +48,6 @@ a{
     left: 0;
     width: 100%;
     background-color: #fff !important;
-     /* js로 색상변경때문에.. important사용..*/
 }
 #header.fixed .header_in{
     background-color: #fff !important;
@@ -242,6 +241,7 @@ a{
     font-size: 14px;
     line-height: 40px;
     padding-left: 16px;
+    margin-bottom: 20px;
     border: 1px solid #87929C;
     color: #87929C;
 }
@@ -265,6 +265,8 @@ a{
     padding: 20px;
     border: 1px solid #87929C;
     border-top: none;
+    background-color: #F8F9FA;
+    z-index: 1000;
 }
 .site_open dt{
     margin-bottom: 5px;
@@ -278,6 +280,46 @@ a{
     font-size: 12px;
     color: #87929C;
 }
+/* 푸터 gnb */
+.f_gnb .m1 span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    background-image: url(../img/main/arr_top.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform: rotate(180deg);
+}
+.f_gnb > ul > li{
+    position: relative;
+}
+.f_gnb > ul > li > a{
+    font-size: 12px;
+    line-height: 30px;
+    color: #060B117A;
+}
+.f_gnb .m1{
+    display: block;
+}
+.f_gnb .sub{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    z-index: 100;
+}
+.f_gnb .sub a{
+    font-size: 10px;
+    color: #060B117A;
+}
+
+
 
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
@@ -386,6 +428,10 @@ a{
     .pc_recruit:hover a::after{
         background-image: url(../img/main/ico_recruit.on.png);
     }
-    
+    /* PC - 푸터 */
+    #footer .inner{
+        width: 1440px;
+        margin: 0 auto;
+    }
 }/* pc 끝 */
 
