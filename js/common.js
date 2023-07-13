@@ -77,9 +77,9 @@ $('.pc_gnb .m1').mouseover(function(){
 
 // 푸터 - 관련사이트 열기
 $('.site').click(function(){
-    $(this).find(span).animate({
+    // $(this).find(span).animate({
         
-    });
+    // });
     $('.site_open').slideToggle();
 });
 
