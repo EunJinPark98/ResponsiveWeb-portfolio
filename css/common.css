@@ -281,6 +281,9 @@ a{
     color: #87929C;
 }
 /* 푸터 gnb */
+.f_gnb{
+    margin-bottom: 20px;
+}
 .f_gnb .m1 span{
     display: inline-block;
     width: 8px;
@@ -318,8 +321,36 @@ a{
     font-size: 10px;
     color: #060B117A;
 }
-
-
+/* 푸터 sns */
+.f_sns ul{
+    display: flex;
+    text-indent: -99999px;
+}
+.f_sns li a{
+    display: block;
+    width: 31px;
+    height: 31px;
+    margin-right: 20px;
+    /* background-color: blue; */
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.f_sns .instargram a{
+    background-image: url(../img/main/ico_instar.png);
+}
+.f_sns .facebook a{
+    background-image: url(../img/main/ico_facebook.png);
+}
+.f_sns .blog a{
+    background-image: url(../img/main/ico_blog.png);
+}
+.f_sns .youtube a{
+    background-image: url(../img/main/ico_youtube.png);
+}
+.f_sns .kakaoTalk a{
+    background-image: url(../img/main/ico_kakaoTalk.png);
+}
 
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
