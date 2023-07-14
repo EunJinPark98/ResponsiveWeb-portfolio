@@ -18,7 +18,7 @@ $(window).scroll(function(){
     })
   }
 
-  let m4start = $('.main3').offset().top + $('.main3').height() * 0.5;
+  let m4start = $('.main3').offset().top + $('.main3').height() * 0.2;
   if(st >= m4start){
     $('.main4 h1.title').css({
       opacity: 1,
@@ -80,3 +80,6 @@ $('.m1_pause').click(function(){
 });
 
 // 본문4 
+let b1 = $('.slide1 .box1').offset().left;
+
+// insertAfter
