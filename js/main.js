@@ -1,14 +1,43 @@
 // main.js
 
 // 브라우저 스크롤 이벤트 
-// $(window).scroll(function(){
-//   let st = $(window).scrollTop();
-//   if(st >= 60){
-     
-//   }else {
-      
-//   }
-// });
+$(window).scroll(function(){
+  let st = $(window).scrollTop();
+  let m3start = $('.main2').offset().top + $('.main2').height() * 0.8;
+  console.log(st);
+  console.log(m3start);
+  if(st >= m3start){
+    $('.main3 h1.title').css({
+      opacity: 1,
+      transform: 'translateY(0px)',
+      transition: '2s'
+    })
+  }else {
+    $('.main3 h1.title').css({
+      opacity: 0,
+      transform: 'translateY(100px)',
+      transition: '2s'
+    })
+  }
+
+  let m4start = $('.main3').offset().top + $('.main3').height() * 0.5;
+  if(st >= m4start){
+    $('.main4 h1.title').css({
+      opacity: 1,
+      transform: 'translateY(0px)',
+      transition: '2s'
+    })
+  }else {
+    $('.main4 h1.title').css({
+      opacity: 0,
+      transform: 'translateY(100px)',
+      transition: '2s'
+    })
+  }
+});
+
+
+
 // 본문1 슬라이드
 $('.m1_slide').slick({
   dots : true,
@@ -54,4 +83,4 @@ $('.m1_pause').click(function(){
   $('.m1_play').show();
 });
 
-// 본문4(서비스 롤링배너)
+// 본문4 
