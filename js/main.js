@@ -4,8 +4,6 @@
 $(window).scroll(function(){
   let st = $(window).scrollTop();
   let m3start = $('.main2').offset().top + $('.main2').height() * 0.8;
-  console.log(st);
-  console.log(m3start);
   if(st >= m3start){
     $('.main3 h1.title').css({
       opacity: 1,
@@ -35,8 +33,6 @@ $(window).scroll(function(){
     })
   }
 });
-
-
 
 // 본문1 슬라이드
 $('.m1_slide').slick({

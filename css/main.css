@@ -513,7 +513,7 @@ h1.title::after{
     }
     .moreNews a::after{
         width: 62px;
-        height: 46px;
+        height: 50px;
         background-size: 46px auto;
     }
     /* PC - 본문3(비즈니스) */
