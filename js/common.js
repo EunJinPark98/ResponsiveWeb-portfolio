@@ -66,13 +66,14 @@ $('.gnb .d1').click(function(){
 });
 
 // PC gnb 서브메뉴 열기
-// @@@@@@@안됨@@@@@@
-$('.pc_gnb .m1').mouseover(function(){
-    $('.pc_gnb_bg').stop().slideDown();
-    $(this).next().show();
+$('.pc_gnb .d1').mouseover(function(){
+    if($(this).find('.sub').length > 0){
+        $('.pc_gnb_bg').stop().slideDown();
+        $(this).find('.sub').stop().slideDown();
+    }
 }).mouseout(function(){
     $('.pc_gnb_bg').stop().slideUp();
-    $(this).next().hide();
+    $(this).find('.sub').stop().slideUp();
 });
 
 // 푸터 - 관련사이트 열기
