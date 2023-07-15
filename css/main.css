@@ -109,8 +109,10 @@
     height: 100%;
 }
 .newsList .box{
-    margin-bottom: 30px;
+    display: block;
     width: 100%;
+    margin-bottom: 30px;
+    background-color: blue;
 }
 .newsList img{
     width: 100%;
@@ -118,16 +120,16 @@
     object-fit: cover;
 }
 .newsList .cate{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0 5px;
+    margin: 20px 10px 5px 10px;
     font-size: 11px;
     color: #444;
 }
 .newsList .title{
-    padding: 0 5px;
+    margin-right: 10px;
+    width: calc(100%-10px);
     font-size: 15px;
     color: #191919;
+    background-color: pink;
 }
 .moreNews a{
     display: flex;
