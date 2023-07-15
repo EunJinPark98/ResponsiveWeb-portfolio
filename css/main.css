@@ -112,7 +112,6 @@
     display: block;
     width: 100%;
     margin-bottom: 30px;
-    background-color: blue;
 }
 .newsList img{
     width: 100%;
@@ -125,11 +124,8 @@
     color: #444;
 }
 .newsList .title{
-    margin-right: 10px;
-    width: calc(100%-10px);
     font-size: 15px;
     color: #191919;
-    background-color: pink;
 }
 .moreNews a{
     display: flex;
