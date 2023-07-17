@@ -80,6 +80,15 @@ $('.m1_pause').click(function(){
 });
 
 // 본문4 
-let b1 = $('.slide1 .box1').offset().left;
+const slide1Clone = $('.slide1').clone();
+$('.slide1').after(slide1Clone);  
+const slide1Clone2 = $('.slide1').clone();
+$('.slide1').after(slide1Clone2);  
 
-// insertAfter
+const slide2Clone = $('.slide2').clone();
+$('.slide2').before(slide2Clone);
+const slide2Clone2 = $('.slide2').clone();
+$('.slide2').before(slide2Clone2);
+
+
+

@@ -298,6 +298,37 @@ h1.title::after{
     background-position: center;
     background-size: 100% auto;
 }
+.slide1{
+    animation-name: slide1Left;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes slide1Left{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-500%);
+    }
+}
+.slide2{
+    animation-name: slide2Right;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes slide2Right{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(500%);
+    }
+}
+.silde_wrap{
+    display: flex;
+}
 .main4 .slide2 .box1 a{
     background-image: url(../img/main/service2_1.gif);
 }
