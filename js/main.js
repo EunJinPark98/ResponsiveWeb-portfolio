@@ -79,15 +79,19 @@ $('.m1_pause').click(function(){
   $('.m1_play').show();
 });
 
-// 본문4 
-const slide1Clone = $('.slide1').clone();
-$('.slide1').after(slide1Clone);  
-const slide1Clone2 = $('.slide1').clone();
-$('.slide1').after(slide1Clone2);  
+// 본문4 기술과 서비스
 
-const slide2Clone = $('.slide2').clone();
-$('.slide2').before(slide2Clone);  
-const slide2Clone2 = $('.slide2').clone();
-$('.slide2').before(slide2Clone2);  
+for (let i = 1; i < 4; i++) {
+    let slideClone =  $('.slide1').clone();
+    $('.slide1').after(slideClone);
+}
+
+for (let i = 1; i < 4; i++) {
+    let slideClone =  $('.slide2').clone();
+    $('.slide2').before(slideClone);
+}
+
+
+
 
 

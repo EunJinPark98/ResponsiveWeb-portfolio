@@ -219,7 +219,7 @@ h1.title::after{
 }
 .main4 .slide1 > div, .main4 .slide2 > div{
     position: relative;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .main4 .slide1 > div a, .main4 .slide2 > div a{
     display: block;
@@ -298,12 +298,11 @@ h1.title::after{
     background-position: center;
     background-size: 100% auto;
 }
-.slide_wrap {
+.slide_wrap1{
+    width: 100%;
     display: flex;
-    /* overflow: hidden; */
-}
-.slide1 {
-    animation: slide1Left 20s linear infinite;
+    margin-bottom: 20px;
+    animation: slide1Left 40s linear infinite;
 }
 @keyframes slide1Left {
     0% {
@@ -312,6 +311,9 @@ h1.title::after{
     100% {
       transform: translateX(-100%);
     }
+}
+.slide_wrap2{
+    display: flex;
 }
 .slide2 {
     animation: slide2Right 20s linear infinite;
