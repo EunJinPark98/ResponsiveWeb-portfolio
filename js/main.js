@@ -86,9 +86,8 @@ const slide1Clone2 = $('.slide1').clone();
 $('.slide1').after(slide1Clone2);  
 
 const slide2Clone = $('.slide2').clone();
-$('.slide2').before(slide2Clone);
+$('.slide2').before(slide2Clone);  
 const slide2Clone2 = $('.slide2').clone();
-$('.slide2').before(slide2Clone2);
-
+$('.slide2').before(slide2Clone2);  
 
 
