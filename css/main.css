@@ -299,6 +299,7 @@ h1.title::after{
     background-size: 100% auto;
 }
 .slide_wrap1{
+    overflow: hidden;
     width: 100%;
     display: flex;
     margin-bottom: 20px;
@@ -312,8 +313,8 @@ h1.title::after{
       transform: translateX(-100%);
     }
 }
-
 .slide_wrap2{
+    overflow: hidden;
     display: flex;
 }
 .slide2 {
