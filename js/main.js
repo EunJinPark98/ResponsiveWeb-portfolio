@@ -90,8 +90,3 @@ for (let i = 1; i < 4; i++) {
     let slideClone =  $('.slide2').clone();
     $('.slide2').before(slideClone);
 }
-
-
-
-
-
