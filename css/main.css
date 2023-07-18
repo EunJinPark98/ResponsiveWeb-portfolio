@@ -4,7 +4,7 @@
 #header{
     background-color: transparent;
 }
-.header_in .logo{
+.header_in .logo a{
     background-image: url(../img/main/logo_wh.png);
 }
 .menuBtn span{

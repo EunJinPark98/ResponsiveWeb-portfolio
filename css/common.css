@@ -55,7 +55,7 @@ a{
 #header:hover .menuBtn span, #header.fixed .menuBtn span{
     background-color: #000;
 }
-#header:hover .logo, #header.fixed .logo{
+#header:hover .logo a, #header.fixed .logo a{
     background-image: url(../img/main/logo_bk.png);
 }
 .header_in{
@@ -69,13 +69,15 @@ a{
     background-color: transparent;
     z-index: 1000;
 }
-.header_in .logo{
+.header_in .logo a{
+    display: block;
     width: 124px;
     height: 18px;
     background-image: url(../img/main/logo_bk.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     text-indent: -99999px;
+    cursor: pointer;
 }
 .pc_gnb, .pc_recruit{
     display: none;
@@ -121,7 +123,7 @@ a{
     margin-left: 20px;
     margin-right: 20px;
 }
-.menu_logo{
+.menu_logo a{
     width: 124px;
     height: 18px;
     background-image: url(../img/main/logo_wh.png);
@@ -369,7 +371,7 @@ a{
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
     /* 헤더 */
-    #header .logo, .menu_logo{
+    #header .logo a, .menu_logo a{
         width: 145px;
         height: 20px;
     }
