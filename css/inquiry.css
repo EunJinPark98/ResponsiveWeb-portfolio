@@ -57,7 +57,7 @@ h1.title{
 .inquiry_business .icon::after{
     position: absolute;
     right: 0;
-    top: 2px;
+    top: 0;
     content: "";
     display: inline-block;
     width: 16px;
@@ -66,6 +66,7 @@ h1.title{
     background-position: center;
     background-size: 100% auto;
 }
+/* 모바일 끝 */
 
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
@@ -97,8 +98,39 @@ h1.title{
     .inquiry_business .name{
         font-size: 20px;
     }
-}
+}/* 테블릿 끝*/
+
 /* pc 시작 */
 @media screen and (min-width:1920px){
- 
-}
+    #container .inner{
+        width: 1190px;
+        margin: 0 auto;
+    }
+    .inquiry_business li{
+        width: 25%;
+        box-sizing: border-box;
+        border-bottom: none;
+    }
+    .inquiry_business li a{
+        display: block;
+    }
+    .inquiry_business .img{
+        width: 220px;
+        height: 220px;
+        margin-bottom: 30px;
+    }
+    .inquiry_business .name{
+        margin-bottom: 15px;
+    }
+    .inquiry_business .icon{
+        font-size: 15px;
+        text-align: left;
+    }
+    .inquiry_business .icon::after{
+        right: auto;
+        left: 63px;
+        width: 22px;
+        height: 22px;
+    }
+    
+}/* PC 끝 */
