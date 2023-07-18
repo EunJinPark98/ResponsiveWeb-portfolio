@@ -383,7 +383,9 @@ h1.title::after{
 .main5{
     background-image: url(../img/main/inquiry_bann.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: auto 100%;
+    background-position: right center;
+    background-color: #eee;
 }
 .main5 .inner{
     padding: 40px 40px 50px 40px;
@@ -568,7 +570,7 @@ h1.title::after{
     /* PC - 본문5 */
     .main5{
         background-image: url(../img/main/inquiry_bann_pc.png);
-        background-color: #eee;
+
     }
     .main5 .inner{
         width: 1440px;
