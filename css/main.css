@@ -206,6 +206,7 @@ h1.title::after{
 }
 /* 모바일 - 본문4(기술과 서비스) */
 .main4{
+    overflow: hidden;
     margin-bottom: 90px;
 }
 .main4 h1.title::after{
@@ -299,33 +300,31 @@ h1.title::after{
     background-size: 100% auto;
 }
 .slide_wrap1{
-    overflow: hidden;
     width: 100%;
     display: flex;
     margin-bottom: 20px;
-    animation: slide1Left 40s linear infinite;
+    animation: slideLeft 300s linear infinite;
 }
-@keyframes slide1Left {
+@keyframes slideLeft {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-10000px);
     }
 }
 .slide_wrap2{
-    overflow: hidden;
+    width: 100%;
     display: flex;
+    margin-bottom: 20px;
+    animation: slideRight 300s linear infinite;
 }
-.slide2 {
-    animation: slide2Right 20s linear infinite;
-}
-@keyframes slide2Right {
+@keyframes slideRight {
     0% {
-      transform: translateX(0);
+      transform: translateX(-10000px);
     }
     100% {
-      transform: translateX(100%);
+      transform: translateX(0);
     }
 }
 .main4 .slide2 .box1 a{
