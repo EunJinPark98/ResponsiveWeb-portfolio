@@ -40,7 +40,7 @@ a{
 /* 모바일 헤더*/
 #header{
     z-index: 1001;
-    background-color: transparent;
+    background-color: #fff
 }
 #header.fixed{
     position: fixed;
@@ -72,7 +72,7 @@ a{
 .header_in .logo{
     width: 124px;
     height: 18px;
-    background-image: url(../img/main/logo_wh.png);
+    background-image: url(../img/main/logo_bk.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     text-indent: -99999px;
@@ -91,7 +91,7 @@ a{
     width: 17px;
     height: 2px;
     margin-left: 13px;
-    background-color: #fff;
+    background-color: #000;
 }
 .menuBtn .bar1{
     top: 8px;
@@ -458,7 +458,7 @@ a{
     .pc_gnb .d1 > a{
         font-size: 16px;
         font-weight: 600;
-        color: #fff;
+        color: #000;
         line-height: 74px;
     }
     #header.fixed .pc_gnb .d1 a{
@@ -496,12 +496,15 @@ a{
         font-weight: 500;
         color: #222;
     }
+    .pc_gnb .sub .m2:hover{
+        text-decoration: underline;
+    }
     .pc_recruit{
         display: block;
     }
     .pc_recruit a{
         font-size: 16px;
-        color: #fff;
+        color: #191919;
         display: flex;
     }
     .pc_recruit a::after{

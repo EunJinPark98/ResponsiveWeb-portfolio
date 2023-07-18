@@ -1,5 +1,4 @@
 // main.js
-
 // 브라우저 스크롤 이벤트 
 $(window).scroll(function(){
   let st = $(window).scrollTop();
@@ -33,7 +32,34 @@ $(window).scroll(function(){
     })
   }
 });
-
+// 헤더 마우스 올리면 색상 변경 (메인의 헤더만 해당)
+$('#header').mouseover(function(){
+  $(this).css({
+      backgroundColor : '#fff'
+  });
+  $('.header_in').css({
+      backgroundColor : '#fff'
+  });
+  $('.pc_gnb .d1 a').css({
+      color : '#000'
+  })
+  $('.pc_recruit a').css({
+      color : '#191919'
+  })
+}).mouseout(function(){
+  $(this).css({
+      backgroundColor : 'transparent'
+  });
+  $('.header_in').css({
+      backgroundColor : 'transparent'
+  });
+  $('.pc_gnb .d1 a').css({
+      color : '#fff'
+  })
+  $('.pc_recruit a').css({
+      color : '#fff'
+  })
+});
 // 본문1 슬라이드
 $('.m1_slide').slick({
   dots : true,

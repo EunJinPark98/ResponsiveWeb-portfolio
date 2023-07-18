@@ -8,34 +8,6 @@ $(window).scroll(function(){
         $('#header').removeClass('fixed');
     }
 });
-// 헤더 마우스 올리면 색상 변경
-$('#header').mouseover(function(){
-    $(this).css({
-        backgroundColor : '#fff'
-    });
-    $('.header_in').css({
-        backgroundColor : '#fff'
-    });
-    $('.pc_gnb .d1 a').css({
-        color : '#000'
-    })
-    $('.pc_recruit a').css({
-        color : '#191919'
-    })
-}).mouseout(function(){
-    $(this).css({
-        backgroundColor : 'transparent'
-    });
-    $('.header_in').css({
-        backgroundColor : 'transparent'
-    });
-    $('.pc_gnb .d1 a').css({
-        color : '#fff'
-    })
-    $('.pc_recruit a').css({
-        color : '#fff'
-    })
-});
 // 모바일 메뉴 열기
 $('.menuBtn').click(function(){
     $('.menu_top').fadeIn(function(){
