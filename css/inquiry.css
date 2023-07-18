@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* inquiry.css */
 /* 모바일 */
-h1.pc_title{
+h1.sub_title{
     display: none;
 }
 h1.title{
@@ -69,9 +69,35 @@ h1.title{
 
 /* 테블릿 시작 */
 @media screen and (min-width:768px){
-
+    h1.title{
+        padding-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 0;
+        background-color: transparent;
+        color: #FFB500
+    }
+    h1.sub_title{
+        display: block;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .inquiry_business ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .inquiry_business li{
+        width: 45%;
+        box-sizing: border-box;
+    }
+    .inquiry_business .name{
+        font-size: 20px;
+    }
 }
-
 /* pc 시작 */
 @media screen and (min-width:1920px){
  
