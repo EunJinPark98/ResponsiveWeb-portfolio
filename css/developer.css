@@ -1,7 +1,26 @@
 @charset "utf-8";
 /* developer.css */
 /* 모바일 */
-
+.developer_main{
+    background-image: url(/img/sub/developer_bann.jpg);
+    background-repeat: no-repeat;
+    background-size: 180% auto;
+    background-position: bottom 0 center;
+}
+.developer_main h1{
+    margin: 40px 40px 15px 40px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #191919;
+}
+.developer_main h3{
+    padding-bottom: 300px;
+    margin: 0 40px; 
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+}
 
 
 /* 테블릿 시작 */
