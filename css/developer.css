@@ -119,6 +119,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 60px;
     }
     .storyBoard > div{
         display: block;
@@ -126,7 +127,8 @@
         box-sizing: border-box;
     }
     .storyBoard h1{
-        font-size: 16px;
+        font-size: 22px;
+        font-weight: 700;
         color: #FFB500;
     }
 }/* 테블릿 끝 */
@@ -143,7 +145,10 @@
         font-size: 44px;
     }
     /* PC - 개발자 스토리 */
-    
+    .developer_story .inner{
+        width: 1440px;
+        margin: 0 auto;
+    }
     .storyBoard > div{
         width: 33.33%;
     }
