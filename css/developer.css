@@ -1,36 +1,55 @@
 @charset "utf-8";
+
 /* developer.css */
 /* 모바일 */
 .developer_main{
-    background-image: url(/img/sub/developer_bann.jpg);
-    background-repeat: no-repeat;
-    background-size: 180% auto;
-    background-position: bottom 0 center;
+    overflow: hidden;
 }
 .developer_main h1{
-    margin: 40px 40px 15px 40px;
+    padding: 40px 40px 15px 40px;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
     color: #191919;
 }
 .developer_main h3{
-    padding-bottom: 300px;
-    margin: 0 40px; 
+    margin: 0 40px;
     font-size: 14px;
+    font-weight: 300;
     text-align: center;
     color: #666;
 }
-
-
+.developer_bg{
+    height: 40vh;
+    background-image: url(/img/sub/developer_bann.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 0 center;
+}
 /* 테블릿 시작 */
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
+    .developer_main h1{
+        padding: 80px 80px 15px 80px;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        color: #191919;
+    }
+    .developer_main h3{
+        font-size: 17px;
+        text-align: center;
+        color: #666;
+    }
+    .developer_bg{
+        height: 50vh;
+    }
+}
 
-}/* 테블릿 끝 */
+/* 테블릿 끝 */
 
 
 
 /* PC 시작 */
-@media screen and (min-width:1920px){
+@media screen and (min-width:1920px) {
 
 }/* PC 끝 */
