@@ -124,6 +124,7 @@ a{
     margin-right: 20px;
 }
 .menu_logo a{
+    display: block;
     width: 124px;
     height: 18px;
     background-image: url(../img/main/logo_wh.png);
