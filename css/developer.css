@@ -2,6 +2,7 @@
 
 /* developer.css */
 /* 모바일 */
+/* 모바일 - 개발자 메인 */
 .developer_main{
     background-image: url(/img/sub/developer_bann.jpg);
     background-repeat: no-repeat;
@@ -23,8 +24,76 @@
     text-align: center;
     color: #666;
 }
+/* 모바일 - 개발자 스토리 */
+.storyTab{
+    padding: 0 16px;
+    border: 1px solid #eee;
+}
+.storyTab ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+}
+.storyTab li{
+    color: #191C207A;
+    margin: 12px;
+}
+.storyTab li.on{
+    position: relative;
+    color: #191C20;
+    box-shadow: rgb(255, 235, 0) 0px -8px 0px inset;
+}
+.storyBoard > div{
+    display: none;
+    padding: 40px 24px;
+}
+.storyBoard .active{
+    display: block;
+}
+.storyBoard h1{
+    font-size: 24px;
+    font-weight: 500;
+    color: #060B11;
+    margin-bottom: 20px;
+}
+.storyBoard img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.storyBoard p{
+    font-size: 16px;
+    color: #060B11;
+    margin-bottom: 20px;
+}
+.storyBoard .gotoBt{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: #888;
+    margin-bottom: 20px;
+}
+.storyBoard .gotoBt::after{
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    background-image: url(/img/main/ico_recruit.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.storyBoard .gotoBt:hover::after{
+    background-image: url(/img/main/ico_recruit.on.png);
+}
+
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
+    /* 테블릿 - 개발자 메인 */
     .developer_main h1{
         padding: 80px 80px 15px 80px;
         font-size: 32px;
@@ -43,6 +112,7 @@
 
 /* PC 시작 */
 @media screen and (min-width:1920px) {
+    /* PC - 개발자 메인 */
     .developer_main h1{
         width: 650px;
         margin: 0 auto;
