@@ -127,6 +127,8 @@
     height: auto;
     border-radius: 20px;
     object-fit: cover;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
 }
 .newsList .cate{
     margin: 20px 0 10px 0;
@@ -165,6 +167,7 @@ h1.title{
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: 700;
+    box-sizing: border-box;
 }
 h1.title u{
     box-shadow: rgb(255, 235, 0) 0px -14px 0px inset;
