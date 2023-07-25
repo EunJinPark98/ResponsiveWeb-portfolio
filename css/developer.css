@@ -4,7 +4,7 @@
 /* 모바일 */
 /* 모바일 - 개발자 메인 */
 .developer_main{
-    background-image: url(/img/sub/developer_bann.jpg);
+    background-image: url(../img/sub/developer_bann.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom 0 center;
@@ -87,13 +87,13 @@
     width: 18px;
     height: 18px;
     margin-left: 8px;
-    background-image: url(/img/main/ico_recruit.png);
+    background-image: url(../img/main/ico_recruit.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
 }
 .storyBoard .gotoBt:hover::after{
-    background-image: url(/img/main/ico_recruit.on.png);
+    background-image: url(../img/main/ico_recruit.on.png);
 }
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {

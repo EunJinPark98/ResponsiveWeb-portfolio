@@ -30,7 +30,7 @@ h1.title{
     align-items: center;
 }
 .inquiry_business li a:hover .icon::after{
-    background-image: url(/img/main/ico_recruit.on.png);
+    background-image: url(../img/main/ico_recruit.on.png);
 }
 .inquiry_business .img{
     width: 33.33%;
@@ -62,7 +62,7 @@ h1.title{
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(/img/main/ico_recruit.png);
+    background-image: url(../img/main/ico_recruit.png);
     background-position: center;
     background-size: 100% auto;
 }
@@ -111,7 +111,7 @@ h1.title{
     }
     h1.sub_title{
         font-size: 36px;
-        background-image: url(/img/sub/readyLion.gif);
+        background-image: url(../img/sub/readyLion.gif);
         background-size: 120px auto;
         background-repeat: no-repeat;
         background-position: right 200px center;
