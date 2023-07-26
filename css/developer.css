@@ -50,7 +50,6 @@
     position: relative;
     display: none;
     padding: 40px 24px 50px 24px;
-    background-color: #f8f8f8;
 }
 .storyBoard .active{
     display: block;
@@ -99,7 +98,7 @@
     background-size: 100% auto;
     background-position: center;
 }
-.gotoBt:hover::after{
+.gotoBtn:hover::after{
     background-image: url(../img/main/ico_recruit.on.png);
 }
 /* 모바일 - 기술블로그 */
@@ -116,11 +115,11 @@
     box-shadow: rgb(255, 235, 0) 0px -14px 0px inset;
 }
 .blogBox{
+    position: relative;
     display: flex;
-    justify-content: left;
     padding: 35px 0;
     margin-bottom: 70px;
-    position: relative;
+    box-sizing: border-box;
 }
 .blogBox:nth-child(odd){
     justify-content: right;
@@ -196,6 +195,44 @@
         height: 15px;
         margin-top: -15px;
         box-shadow: rgb(255, 235, 0) 0px -14px 0px inset;
+    }
+    /* 테블릿 - 기술블로그 */
+    .developer_techBlog h1{
+        font-size: 36px;
+    }
+    .blogBox{
+        display: block;
+    }
+    .blogBox a{
+        display: flex;
+        width: 100%;
+    }
+    .blogBox:nth-child(odd) a{
+        flex-direction: row-reverse;
+    }
+    .blogBox .blogImg{
+        width: 50%;
+    }
+    .blogBox .content{
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .blogBox:nth-child(even).content{
+        margin-left: 10px;
+        text-align: right;
+    }
+    .blogBox:nth-child(odd) .content{
+        text-align: right;
+    }
+    .blogBox h3{
+        position: relative;
+        font-size: 34px;
+    }
+    .blogBox .txt{
+        display: block;
+        width: 100%;
+        font-size: 17px;
+        margin-top: 6px;
     }
 }/* 테블릿 끝 */
 /* PC 시작 */
