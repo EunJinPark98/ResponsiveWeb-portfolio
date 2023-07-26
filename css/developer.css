@@ -212,14 +212,11 @@
     }
     .blogBox .blogImg{
         width: 50%;
+        margin-bottom: 0;
     }
     .blogBox .content{
-        padding: 0 10px;
+        padding: 10px 10px;
         box-sizing: border-box;
-    }
-    .blogBox:nth-child(even).content{
-        margin-left: 10px;
-        text-align: right;
     }
     .blogBox:nth-child(odd) .content{
         text-align: right;
@@ -251,5 +248,20 @@
     }
     .storyBoard > div{
         width: 33.33%;
+    }
+    /* PC - 기술블로그 */
+    .developer_techBlog .inner{
+        width: 1440px;
+        margin: 0 auto;
+    }
+    .blogBox .content{
+        padding: 30px 30px;
+    }
+    .blogBox h3{
+        font-size: 36px;
+    }
+    .blogBox .txt{
+        font-size: 20px;
+        margin-top: 8px;
     }
 }/* PC 끝 */
