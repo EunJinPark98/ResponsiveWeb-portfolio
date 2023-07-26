@@ -121,6 +121,10 @@
     margin-bottom: 70px;
     box-sizing: border-box;
 }
+.blogBox2{
+    transform: translateY(200px);
+    opacity: 0;
+}
 .blogBox:nth-child(odd){
     justify-content: right;
 }
