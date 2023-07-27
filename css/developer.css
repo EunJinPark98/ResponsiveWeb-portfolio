@@ -103,7 +103,7 @@
 }
 /* 모바일 - 기술블로그 */
 .developer_techBlog{
-    padding: 80px 0;
+    padding-top: 80px;
 }
 .developer_techBlog h1{
     display: inline-block;
@@ -158,6 +158,41 @@
     align-items: center;
     font-size: 16px;
     color: #060B1199;
+}
+/* 모바일 - 지원하기 */
+.developer_apply{
+    background-image: url(../img/sub/apply_bann.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+
+}
+.developer_apply .inner{
+    padding: 40px 45px 45px 45px;
+}
+.developer_apply h2{
+    font-size: 19px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.apply_btn{
+    text-align: center;
+}
+.apply_btn a{
+    padding: 8px 35px 11px 35px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #191919;
+    background-color: #fff;
+}
+.apply_btn a:hover{
+    background-color: #FFE100;
 }
 /* 테블릿 시작 */
 @media screen and (min-width:768px) {
