@@ -171,6 +171,7 @@
 }
 .developer_apply .inner{
     padding: 40px 45px 45px 45px;
+    box-sizing: border-box;
 }
 .developer_apply h2{
     font-size: 19px;
@@ -319,14 +320,21 @@
     }
     /* PC - 지원하기 */
     .developer_apply .inner{
-        padding: 60px 45px 65px 45px;
+        position: relative;
+        padding: 130px 0 114px 340px;
     }
     .developer_apply h2{
-        font-size: 28px;
-        margin-bottom: 35px;
+        font-size: 38px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .apply_btn{
+        position: absolute;
+        top: 170px;
+        right: 290px;
     }
     .apply_btn a{
-        padding: 14px 55px;
-        font-size: 15px;
+        padding: 16px 80px;
+        font-size: 16px;
     }
 }/* PC 끝 */
