@@ -120,10 +120,12 @@
     padding: 35px 0;
     margin-bottom: 70px;
     box-sizing: border-box;
-}
-.blogBox2{
     transform: translateY(200px);
     opacity: 0;
+}
+.blogBox1{
+    transform: translateY(0);
+    opacity: 1;
 }
 .blogBox:nth-child(odd){
     justify-content: right;
