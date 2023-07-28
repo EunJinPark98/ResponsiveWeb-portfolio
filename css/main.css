@@ -137,7 +137,6 @@
 }
 .newsList .title{
     font-size: 15px;
-    color: #191919;
 }
 .moreNews a{
     display: flex;
@@ -408,7 +407,6 @@ h1.title::after{
     font-size: 19px;
     font-weight: 600;
     text-align: center;
-    color: #191919;
 }
 .main5 .inquiry_bt{
     text-align: center;

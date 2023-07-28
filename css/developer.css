@@ -15,7 +15,6 @@
     font-size: 24px;
     font-weight: 700;
     text-align: center;
-    color: #191919;
 }
 .developer_main h3{
     padding-bottom: 50%;
@@ -202,7 +201,6 @@
         font-size: 32px;
         font-weight: 700;
         text-align: center;
-        color: #191919;
     }
     .developer_main h3{
         font-size: 17px;
@@ -227,7 +225,6 @@
     .storyBoard h1{
         display: inline-block;
         font-size: 24px;
-        color: #191919;
     }
     .storyBoard>div:hover h1::after{
         content: "";

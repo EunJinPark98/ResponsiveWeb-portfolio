@@ -6,7 +6,7 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
     line-height: 1.5;
-    color: #121212;
+    color: #191919;
 }
 img, input, button{
     vertical-align: top;
@@ -277,7 +277,6 @@ a{
 .site_open dt{
     margin-bottom: 5px;
     font-size: 13px;
-    color: #191919;
 }
 .site_open dl{
     margin-bottom: 20px;
