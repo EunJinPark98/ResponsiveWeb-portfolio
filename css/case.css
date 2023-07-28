@@ -204,6 +204,17 @@ a.filter_reset{
         box-sizing: border-box;
         margin: 12px 40px;
     }
+    .filter_content{
+        padding: 10px 40px;
+        margin-bottom: 40px;
+    }
+    .filter_cont_in dt{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .filter_cont_in dd{
+        font-size: 12px;
+    }
     .newsList{
         padding: 20px 40px;
     }
@@ -258,6 +269,15 @@ a.filter_reset{
     /* PC - 고객사례 기사 */
     .case_filter{
         margin: 12px 0px;
+    }
+    .filter_content{
+        padding: 10px 0px;
+    }
+    .filter_cont_in dl{
+        width: 50%;
+    }
+    .filter_service{
+        float: left;
     }
     .newsList{
         padding: 30px 0;
