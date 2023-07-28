@@ -37,7 +37,7 @@ h1.title{
     transform: rotate(-180deg);
 }
 .newsList{
-    padding: 20px;
+    padding: 10px 20px;
 }
 .newsList .box{
     display: block;
@@ -156,7 +156,7 @@ h1.title{
         margin: 12px 40px;
     }
     .newsList{
-        padding: 40px;
+        padding: 20px 40px;
     }
     .newsList{
         display: flex;
@@ -211,7 +211,7 @@ h1.title{
         margin: 12px 0px;
     }
     .newsList{
-        padding: 60px 0;
+        padding: 30px 0;
     }
     .newsList{
         display: flex;
