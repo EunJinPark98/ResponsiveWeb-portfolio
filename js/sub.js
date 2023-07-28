@@ -87,3 +87,7 @@ $('.storyTab li').click(function(){
     $('.storyBoard > div').eq(i).addClass('active');
 });
 
+// 고객사례 - 사례 선택하기 버튼
+$('.case_filter').click(function(){
+   $('.filter_content').slideToggle();
+})
