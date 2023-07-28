@@ -37,7 +37,7 @@ h1.title{
     transform: rotate(-180deg);
 }
 .newsList{
-    padding: 0 20px 90px 20px;
+    padding: 20px;
 }
 .newsList .box{
     display: block;
@@ -63,7 +63,8 @@ h1.title{
 .news_pager{
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    margin-bottom: 90px;
 }
 .news_pager .on{
     color: #191919;
@@ -136,7 +137,7 @@ h1.title{
     }
     h1.sub_title{
         display: block;
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 600;
         text-align: center;
         margin-bottom: 10px;
@@ -148,19 +149,47 @@ h1.title{
         margin-bottom: 50px;
         color: #666;
     }
-
-
-    .inquiry_business ul{
+    /* 테블릿 - 고객사례 기사 */
+    .case_filter{
+        width: 220px;
+        box-sizing: border-box;
+        margin: 12px 40px;
+    }
+    .newsList{
+        padding: 40px;
+    }
+    .newsList{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
-    .inquiry_business li{
-        width: 45%;
-        box-sizing: border-box;
+    .newsList .box{
+        width: 48%;
+        margin-bottom: 60px;
     }
-    .inquiry_business .name{
-        font-size: 20px;
+    .newsList .cate{
+        font-size: 14px;
+    }
+    .newsList .title{
+        width: 100%;
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .news_pager{
+        margin-bottom: 120px;
+    }
+    /* 테블릿 - 본문5(문의하기) */
+    .main5 .inner{
+        padding: 50px 50px 60px 50px;
+    }
+    .main5 p{
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .main5 .inquiry_bt a{
+        font-size: 15px;
+        padding: 12px 56px 16px;
+        border-radius: 40px;
     }
 }/* 테블릿 끝*/
 
@@ -176,39 +205,54 @@ h1.title{
     }
     h1.sub_title{
         font-size: 36px;
-        background-image: url(../img/sub/readyLion.gif);
-        background-size: 120px auto;
-        background-repeat: no-repeat;
-        background-position: right 200px center;
     }
-
-
-    .inquiry_business li{
-        width: 25%;
-        box-sizing: border-box;
-        border-bottom: none;
-        margin-bottom: 50px;
+    /* PC - 고객사례 기사 */
+    .case_filter{
+        margin: 12px 0px;
     }
-    .inquiry_business li a{
-        display: block;
+    .newsList{
+        padding: 60px 0;
     }
-    .inquiry_business .img{
-        width: 220px;
-        height: 220px;
-        margin-bottom: 30px;
+    .newsList{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
-    .inquiry_business .name{
-        margin-bottom: 15px;
+    .newsList .box{
+        width: 32%;
+        margin-bottom: 80px;
     }
-    .inquiry_business .icon{
-        font-size: 15px;
-        text-align: left;
+    .newsList .cate{
+        font-size: 14px;
     }
-    .inquiry_business .icon::after{
-        right: auto;
-        left: 63px;
-        width: 22px;
-        height: 22px;
+    .newsList .title{
+        width: 100%;
+        font-size: 19px;
+        font-weight: 500;
     }
-    
+    .news_pager{
+        margin-bottom: 150px;
+    }
+    /* PC - 본문5 */
+    .main5{
+        background-image: url(../img/main/inquiry_bann_pc.png);
+    }
+    .main5 .inner{
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 80px 90px 80px;
+    }
+    .main5 p{
+        margin-bottom: 0;
+        font-size: 38px;
+    }
+    .main5 .inquiry_bt a{
+        font-size: 16px;
+        padding: 14px 57px 18px;
+        border-radius: 50px;
+    }
 }/* PC 끝 */
