@@ -37,12 +37,12 @@ h1.title{
     transform: rotate(-180deg);
 }
 .newsList{
-    padding: 20px;
+    padding: 0 20px 90px 20px;
 }
 .newsList .box{
     display: block;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .newsList img{
     width: 100%;
@@ -60,23 +60,38 @@ h1.title{
 .newsList .title{
     font-size: 15px;
 }
-.moreNews a{
+.news_pager{
     display: flex;
-    justify-content: center;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 34px;
+    align-items: center;
+    justify-content: center; 
+}
+.news_pager .on{
     color: #191919;
 }
-.moreNews a::after{
+.news_pager .on::after{
     content: "";
-    display: inline-block;
-    width: 50px;
-    height: 34px;
-    background-image: url(../img/main/newMore_btn.png);
+    display: block;
+    width: 120%;
+    height: 2px;
+    background-color: #191919;
+}
+.news_pager span{
+    margin: 8px;
+    color: #888;
+    font-size: 13px;
+}
+.news_pager .next, .news_pager .endPage{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-image: url(../img/main/arr_top.png);
     background-repeat: no-repeat;
-    background-position: left 10px center;
-    background-size: 34px auto;
+    background-size: 100% auto;
+    transform: rotate(90deg);
+}
+.news_pager .endPage{
+    background-size: 100% auto;
+    border-top: 1px solid #333;
 }
 
 /* 모바일 끝 */
