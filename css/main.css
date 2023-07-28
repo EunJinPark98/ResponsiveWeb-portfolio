@@ -125,7 +125,7 @@
 .newsList img{
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     object-fit: cover;
     border: 1px solid #f0f0f0;
     box-sizing: border-box;
