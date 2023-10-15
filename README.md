@@ -7,6 +7,7 @@
 <br>
 <br>
 
-![image](https://github.com/EunJinPark98/ResponsiveWebSite/assets/120006805/c5f60f3b-101d-4ffb-8fa9-0566826b15b0)
+![image](https://github.com/EunJinPark98/ResponsiveWebSite/assets/120006805/c8e79531-a9a8-424e-b708-4a108f98415d)
+
 
 </div>
