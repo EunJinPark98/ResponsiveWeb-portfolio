@@ -12,6 +12,7 @@
 
 
 
-![image](https://github.com/EunJinPark98/ResponsiveWebSite/assets/120006805/96a0b97b-c851-4fa1-a27b-6bd6d8a05b45)
+![image](https://github.com/EunJinPark98/ResponsiveWebSite/assets/120006805/7b1de306-2c45-496a-a56c-54384d88f43e)
+
 
 </div>
